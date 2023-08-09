@@ -1,9 +1,11 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Hero from "../components/Hero.vue";
+import About from "../components/About.vue"
+import Carousel from "../components/Corousel.vue"
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <Hero />
+  <About />
+  <Carousel />
 </template>
