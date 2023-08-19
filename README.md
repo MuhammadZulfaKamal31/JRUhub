@@ -39,3 +39,4 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+INGAT PROPS SELALU BERADA DI ELEMENT PARENT NYA
