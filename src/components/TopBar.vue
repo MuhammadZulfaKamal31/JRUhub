@@ -10,7 +10,7 @@
                 <!-- profile -->
                 <div @click="toggleDropDown"
                     class="h-[73px] w-[73px] bg-white rounded-full flex items-center justify-center mr-[38px] absolute right-7">
-                    <img src="../assets/Rectangle 38.png" alt="" class="h-[50px] w-[50px]" />
+                    <img src="../assets/Rectangle38.png" alt="" class="h-[50px] w-[50px]" />
                 </div>
             </div>
             <div>

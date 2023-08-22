@@ -5,7 +5,7 @@
             <div class="flex md:items-center md:flex-row flex-col">
                 <div class="mr-1 justify-between w-[300px] md:w-full flex" :class="dropDown ? '' : ' ml-[47px]'">
                     <div>
-                        <img src="../assets/image 1.png" alt="" class="h-[28px] w-[100px]" />
+                        <img src="../assets/image1.png" alt="" class="h-[28px] w-[100px]" />
                     </div>
                     <div class=" md:hidden visible">
                         <i @click="togle" class="fa-solid fa-bars text-black text-2xl"></i>

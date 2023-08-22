@@ -18,7 +18,7 @@
         </div>
         <div class=" items-center w-[330px] md:w-[50%] ">
             <div class="w-full">
-                <img class="" src="../../assets/image 2.png" alt="">
+                <img class="" src="../../assets/image2.png" alt="">
             </div>
         </div>
 

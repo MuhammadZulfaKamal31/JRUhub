@@ -3,7 +3,7 @@
         <div class=" bg-red-600 h-[200px] md:h-[425px] flex justify-between items-center px-4">
             <div
                 class="relative w-[100px] h-[100px] md:w-[269px] md:h-[269px] bg-white rounded-full flex justify-center items-center md:mx-[100px]">
-                <img class=" md:w-[177px] w-full md:h-[48px]" src="../../assets/image 1.png" alt="">
+                <img class=" md:w-[177px] w-full md:h-[48px]" src="../../assets/image1.png" alt="">
             </div>
             <div class=" absolute left-28 md:w-[792px] md:left-[450px] mb-[4rem] text-white px-4">
                 <h1 class=" my-3 mt-14 md:my-6  text-[17px] md:text-[40px]">Sejarah JRUHUB</h1>

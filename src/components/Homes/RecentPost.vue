@@ -4,7 +4,7 @@
         <div class="flex flex-wrap md:flex-row justify-around mt-8 md:mt-[70px] md:mr-16">
             <div class=" w-[150px] md:w-[240px]" v-for="i in 4 " :key="i">
                 <div class="bg-white shadow-lg overflow-hidden mb-5">
-                    <img class="w-full md:h-[185px] object-cover" src="../../assets/Rectangle 10.png" alt="Product Image">
+                    <img class="w-full md:h-[185px] object-cover" src="../../assets/Rectangle10.png" alt="Product Image">
                     <div class="p-4">
                         <h3 class="text-[15px] md:text-xl font-semibold">Lorem Ipsum Dolor</h3>
                         <span class="text-[10px] md:text-[11px] mr-6">12/8/2022</span>

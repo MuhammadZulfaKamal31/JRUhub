@@ -2,7 +2,7 @@
     <div >
         <div class=" bg-white md:h-screen font-inter"  id="SideBar" :class=" dataOpenSideBar==true ?' w-[150px] md:w-[300px] fixed' :' w-0'">
                 <div class=" flex justify-center my-10">
-                    <img class=" w-[100px] h-[27px]" src="../assets/image 1.png" alt="">
+                    <img class=" w-[100px] h-[27px]" src="../assets/image1.png" alt="">
                 </div>
                 <!-- sidebar -->
                 <div class="">
