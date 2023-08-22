@@ -4,7 +4,7 @@
         <div class=" w-full h-[475px] bg-white rounded-md p-7">
             <div class=" flex justify-between ">
                 <div class=" flex items-center h-[150px]">
-                    <img src="../../assets/Rectangle38.png" alt="">
+                    <img src="../../../assets/Rectangle38.png" alt="">
                     <div class="p-4">
                         <h2 class=" text-[40px] font-[700]"> CrackinCode</h2>
                         <p class="text-[20px] w-[300]">Est.30 juni 2022</p>
@@ -30,28 +30,28 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]">30%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]"> 20% </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]"> 20%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]"> 10%</td>
@@ -75,28 +75,28 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]">30%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]"> 20% </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]"> 20%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]"> 10%</td>
@@ -122,35 +122,35 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Karyawan
                             </td>
                             <td class="text-[15px] font-[600]">admin</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Karyawan
                             </td>
                             <td class="text-[15px] font-[600]"> admin </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Karyawan
                             </td>
                             <td class="text-[15px] font-[600]"> admin</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Karyawan
                             </td>
                             <td class="text-[15px] font-[600]"> admin</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Karyawan
                             </td>
                             <td class="text-[15px] font-[600]"> admin</td>
@@ -174,21 +174,21 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Asset
                             </td>
                             <td class="text-[15px] font-[600]">Baik</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Asset
                             </td>
                             <td class="text-[15px] font-[600]"> Boncel </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Asset
                             </td>
                             <td class="text-[15px] font-[600]"> Baik</td>
@@ -202,7 +202,7 @@
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Asset
                             </td>
                             <td class="text-[15px] font-[600]"> Hilang</td>

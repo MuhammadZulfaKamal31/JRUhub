@@ -36,28 +36,28 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]">Rp5.OOO.OOO</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]">Rp5.OOO.OOO</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]">Rp5.OOO.OOO</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 CrackinCode
                             </td>
                             <td class="text-[15px] font-[600]">Rp5.OOO.OOO</td>
