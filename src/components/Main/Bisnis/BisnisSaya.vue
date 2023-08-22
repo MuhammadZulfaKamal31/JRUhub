@@ -195,7 +195,7 @@
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Asset
                             </td>
                             <td class="text-[15px] font-[600]"> Hilang</td>
