@@ -17,28 +17,28 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4 pt-6  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]">Teknis</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]"> Strategis </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]"> Fasilitator</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle 10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]"> Fasilitator</td>
