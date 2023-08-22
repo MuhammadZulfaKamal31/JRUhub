@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class='w-full h-[564px] bg-slate-200  rounded-md overflow-auto'
-            :class="sideBar.openSideBar ? ' p-10 pr-[6%]' : ' p-10 pl-20 px-[3%]'">
+            :class="sideBar.openSideBar ? ' p-10 pr-[6%]' : 'p-10 pl-20 px-[3%]'">
             <div class="flex flex-wrap mx-4 bg-white p-10 rounded-md">
                 <div v-for="i in 10" class="w-1/5 px-4 mb-4">
                     <div class="h-full border rounded-md overflow-hidden shadow-xl">

@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-screen flex">
+    <div class=" w-full flex">
         <!-- topbar -->
         <div class=" h-[190px] w-full bg-red-500 flex items-center flex-col pt-7 px-10 ">
             <div class=" w-full mb-14 flex justify-between mx-7">
@@ -25,8 +25,8 @@
         <div v-show="showDropDown" class=" absolute right-[40px] top-[6.5rem] z-10 mt-2 w-[119px] origin-top-right rounded-md bg-white shadow-lg ring-1
                 ring-black ring-opacity-5 focus:outline-none">
             <div class="py-1 text-left">
-                <a href="/Dashboard/Profile" class=" block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                    id="menu-item-2"> <span class="fa-solid fa-gauge"></span> Pofile</a>
+                <a href="/Dashboard/Profile" class=" block px-4 py-2 text-sm" role="menuitem" id=" menu-item-2"> <span
+                        class="fa-solid fa-gauge"></span> Pofile</a>
                 <form method="POST" action="" role="none">
                     <button type="submit" class=" block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1"
                         id="menu-item-3"><span class="fa-solid fa-gauge"></span> Log Out</button>

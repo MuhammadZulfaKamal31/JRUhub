@@ -1,18 +1,24 @@
 <template >
-    <div class=" h-full w-full gap-7 p-14 font-inter">
+    <div class=" h-full w-full gap-7  pr-[90px] font-inter p-12"
+        :class="sideBar.openSideBar ? 'pl-14 pr-[6%] duration-300' : 'pl-[7%] duration-300'">
         <div class=" h-[487px] gap-10 flex mb-6">
             <!-- chart -->
-            <div class=" w-full h-full bg-white flex items-center justify-center">
+            <div class=" w-full h-full bg-white flex items-center justify-center rounded-md">
                 <DoughnutChart :chart-data="data" :options="options" css-classes="chart-container" />
             </div>
             <!-- form isi -->
-            <div class=" w-full h-full bg-white p-8">
+            <div class=" w-full h-full bg-white p-8 rounded-md ">
                 <form action="">
                     <h1 class=" text-[32px] font-[700] mb-5">Tambah Pemilik</h1>
                     <div class=" my-8">
-                        <input placeholder=" Pilih User" type="text" class=" w-full h-[57px] border-[2px] bg-[#FAFAFA]">
+                        <input @input="onInputChange" v-model="searchQuery" placeholder=" Pilih User" type="text"
+                            class=" w-full h-[57px] border-[2px] bg-[#FAFAFA]">
+                        <ul v-if="showUserList" class=" mt-2 absolute w-[450px] z-10">
+                            <li class=" bg-opacity-70 bg-black text-white rounded-b-sm p-2 cursor-pointer"
+                                v-for="user in filteredUsers" :key="user.id" @click="selectUser(user)">{{ user.name }}</li>
+                        </ul>
                     </div>
-                    <div class=" my-8">
+                    <div class=" my-8 -z-10">
                         <input placeholder=" Pesentase Kepemilikan" type="text"
                             class=" w-full h-[57px] border-[2px] bg-[#FAFAFA]">
                     </div>
@@ -24,15 +30,16 @@
                         <input type="checkbox" class=" rounded-md w-[19px] h-[19px] bg-slate-300">
                         <span class=" text-[#A3A3A3] text-[15px]">Tidak Aktif</span>
                     </div>
-                    <button type="submit"
-                        class=" bg-red-600 p-3 w-full text-center text-[20px] text-white my-10">Login</button>
+                    <button type="submit" class=" bg-red-600 p-3 w-full text-center text-[20px] text-white my-10">
+                        Login
+                    </button>
                 </form>
             </div>
         </div>
 
         <div class=" w-full h-[691px] gap-10 flex">
             <!-- Pemilik -->
-            <div class=" w-[87%] h-[487px] bg-white p-10">
+            <div class=" w-[92%] h-[487px] bg-white p-10 rounded-md">
                 <div class=" flex justify-between">
                     <h1 class=" text-[32px] font-[600]">Pemilik</h1>
                     <i class="fa-solid fa-up-right-from-square text-[25px]"></i>
@@ -48,7 +55,7 @@
                         <tbody>
                             <tr class="">
                                 <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataInteger[0] }}%</td>
+                                <td class=" font-[600] text-[15px]">{{ dataValues[0] }}%</td>
                                 <td>
                                     <span class="fa-solid fa-pen-to-square"></span>
                                 </td>
@@ -58,7 +65,7 @@
                             </tr>
                             <tr class="">
                                 <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataInteger[1] }}%</td>
+                                <td class=" font-[600] text-[15px]">{{ dataValues[1] }}%</td>
                                 <td>
                                     <span class="fa-solid fa-pen-to-square"></span>
                                 </td>
@@ -68,7 +75,7 @@
                             </tr>
                             <tr class="">
                                 <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataInteger[2] }}%</td>
+                                <td class=" font-[600] text-[15px]">{{ dataValues[2] }}%</td>
                                 <td>
                                     <span class="fa-solid fa-pen-to-square"></span>
                                 </td>
@@ -78,7 +85,7 @@
                             </tr>
                             <tr class="">
                                 <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataInteger[3] }}%</td>
+                                <td class=" font-[600] text-[15px]">{{ dataValues[3] }}%</td>
                                 <td>
                                     <span class="fa-solid fa-pen-to-square"></span>
                                 </td>
@@ -91,7 +98,18 @@
                 </div>
             </div>
             <!-- nama pemilik -->
-            <div class=" w-full h-full bg-white ">
+            <div class=" w-full h-full bg-white p-10 rounded-md">
+                <h1 class=" text-[30px] font-[600]">Nama Pemilik</h1>
+                <div class=" pl-10 mt-14">
+                    <div class=" w-[241px] h-[241px] rounded-full bg-[#D9D9D9]"></div>
+                    <div class=" flex justify-start">
+                        <div class=" py-10 flex flex-col items-center ">
+                            <h2 class=" text-[29px] font-[500] py-2">Harsana Budiyanto</h2>
+                            <p class="text-[13px] font-[500]"> budiyanto.harsana@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -103,34 +121,24 @@ import { ref, computed } from "vue"
 import { DoughnutChart } from "vue-chart-3"
 import { Chart, DoughnutController, ArcElement } from "chart.js"
 
+//=======================penyesuaian tampilan=======================================
+import { useSidebarStore } from '../../../stores/Store';
+const sideBar = useSidebarStore()
+//========================chart js =================================================
 // Mendaftarkan modul Chart.js yang dibutuhkan
 Chart.register(DoughnutController, ArcElement)
-
 // Data nilai-nilai
 const dataValues = ref([22, 25, 10, 15])
-
-// Menghitung total nilai untuk menghitung persentase
-const total = computed(() => dataValues.value.reduce((acc, value) => acc + value, 0));
-
 // Menyiapkan data untuk grafik Donut
 const data = computed(() => ({
+    labels: dataValues.value.map(value => `${value}%`),
     datasets: [
         {
-            data: dataValues.value.map(value => ((value / total.value) * 100)),
+            data: dataValues.value,
             backgroundColor: ["#ff7f50", "#ffffff", "#ff6347", "#ff5330", "#f5afa3"]
         }
     ],
-    labels: dataValues.value.map(value => `${Math.round((value / total.value) * 100)}%`)
-    // Menambahkan label dalam format persen
 }));
-
-const persentaseData = data.value.datasets[0].data;
-const dataInteger = persentaseData.map(persentase => Math.round(persentase));
-console.log(dataInteger)
-
-
-
-
 // Opsi grafik
 const options = ref({
     plugins: {
@@ -139,6 +147,33 @@ const options = ref({
         }
     }
 })
+//==================================== search filter ==============================
+const users = ref([
+    { id: 1, name: 'Muhammad Zulfa Kamal' },
+    { id: 2, name: 'Muhammad aufil lana' },
+    { id: 3, name: 'Mutiara dewi' },
+    { id: 4, name: 'Abdul Aziz' },
+    { id: 5, name: 'Spongebob' },
+]);
+
+const searchQuery = ref('');
+const showUserList = ref(false);
+
+// Membuat komputed property untuk melakukan filter user berdasarkan searchQuery
+const filteredUsers = computed(() => {
+    return users.value.filter(user => {
+        return user.name.toLowerCase().includes(searchQuery.value.toLowerCase());
+    });
+});
+
+const selectUser = (user) => {
+    searchQuery.value = user.name;
+    showUserList.value = false; // Menyembunyikan daftar user setelah memilih user
+};
+
+const onInputChange = () => {
+    showUserList.value = !!searchQuery.value; //search query di sini mengahasilkan tanda false 
+};
 </script>
 
 <style></style>

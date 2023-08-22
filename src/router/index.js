@@ -6,13 +6,17 @@ import Dashboard from '../views/Dashboard.vue'
 import HalUtama from '../components/Main/HalUtama.vue'
 import Profile from '../components/Main/Profile.vue'
 import Pendapatan from '../components/Main/Pendapatan.vue'
-import Bisnis from '../components/Main/Bisnis.vue'
-import BisnisSaya from '../components/Main/BisnisSaya.vue';
+import Bisnis from '../components/Main/Bisnis/Bisnis.vue'
+import BisnisSaya from '../components/Main/Bisnis/BisnisSaya.vue';
 import Layout from '../views/layout/Layeout.vue'
 import Pendampingan from '../components/Main/Pendampingan.vue'
 import Circle from '../components/Main/Circle.vue'
 import Komune from '../components/Main/Komune.vue'
-import CrackinCode from '../components/Main/CrackinCode.vue'
+import CrackinCode from '../components/Main/Bisnis/CrackinCode.vue'
+import CrackinCodeKaryawan from '../components/Main/Bisnis/CrackinCodeKaryawan.vue'
+import CrackinCodePendamping from "../components/Main/Bisnis/CrackinCodePendamping.vue"
+import CrackinCodeAsset from "../components/Main/Bisnis/CrackinCodeAsset.vue"
+
 import SideBar from '../components/SideBar.vue'
 
 const router = createRouter({
@@ -79,6 +83,21 @@ const router = createRouter({
           path: 'CrackinCode',
           name: 'CrackinCode',
           component: CrackinCode
+        },
+        {
+          path: 'Crackin_Code_Karyawan',
+          name: 'CrackinCodKaryawan',
+          component: CrackinCodeKaryawan
+        },
+        {
+          path: 'Crackin_Code_Pendamping',
+          name: 'CrackinCodePendamping',
+          component: CrackinCodePendamping
+        },
+        {
+          path: 'Crackin_Code_Asset',
+          name: 'CrackinCodeAsset',
+          component: CrackinCodeAsset
         }
       ]
     }

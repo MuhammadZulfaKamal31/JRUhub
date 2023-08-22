@@ -258,7 +258,7 @@
     </div>
 </template>
 <script setup>
-import { useSidebarStore } from '../../stores/Store';
+import { useSidebarStore } from '../../../stores/Store';
 
 const openSideBar = useSidebarStore()
 

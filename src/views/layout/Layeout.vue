@@ -2,11 +2,11 @@
     <div class="w-full h-full flex">
         <!-- penggunaan pinia haarus lebih spesifik agar bisa di gunakan -->
         <Sidebar :dataOpenSideBar="openSideBar.openSideBar" />
-        <div class=" h-full" :class="openSideBar.openSideBar ? 'ml-[300px] duration-300' : 'w-full'">
+        <div class=" h-full" :class="openSideBar.openSideBar ? 'ml-[150px] md:ml-[300px] duration-300' : 'w-full'">
             <TopBar :toggleSideBar="openSideBar.toggleSideBar" :openSideBar="openSideBar.openSideBar" />
             <div class=" h-full bg-slate-200"
-                :class="openSideBar.openSideBar ? 'w-[80%] duration-300' : 'w-full duration-300'">
-                <router-view :openSideBar="openSideBar"></router-view>
+                :class="openSideBar.openSideBar ? 'w-[10px] md:w-[80%] duration-300' : 'w-full duration-300'">
+                <router-view></router-view>
             </div>
         </div>
     </div>
