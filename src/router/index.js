@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Login from '../views/Login.vue';
 import Register from '../views/Register.vue'
-import Dashboard from '../views/Dashboard.vue'
 import HalUtama from '../components/Main/HalUtama.vue'
 import Profile from '../components/Main/Profile.vue'
 import Pendapatan from '../components/Main/Pendapatan.vue'
