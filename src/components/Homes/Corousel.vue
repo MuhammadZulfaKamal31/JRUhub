@@ -60,7 +60,7 @@
         </div>
     </div>
 </template>
-  
+
 <script setup>
 import { SplitCarousel, SplitCarouselItem } from "vue-split-carousel";
 

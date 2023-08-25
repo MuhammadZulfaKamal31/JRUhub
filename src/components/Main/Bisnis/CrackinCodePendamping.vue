@@ -1,10 +1,11 @@
 <template>
-    <div class=" h-full w-full p-14  gap-6 flex flex-col pr-[90px]" :class="sideBar.openSideBar ? ' ' : ' pl-24'">
-        <div class=" h-[487px] w-full flex gap-10">
+    <div class=" h-full w-full pt-20 px-7  md:p-14  gap-6 flex flex-col md:pr-[90px]"
+        :class="sideBar.openSideBar ? 'md:pr-[27%]' : ' md:pl-24'">
+        <div class=" md:h-[487px] w-full flex flex-col md:flex-row gap-10">
             <!-- Pendamping -->
             <div class="h-full  w-full bg-white p-8 rounded-md">
                 <div class=" flex justify-between">
-                    <h1 class=" text-[32px] font-semibold">Pendamping</h1>
+                    <h1 class=" text-[29px] md:text-[32px] font-semibold">Pendamping</h1>
                     <i class="fa-solid fa-up-right-from-square text-xl"></i>
                 </div>
                 <table class="w-full mt-9">
@@ -48,7 +49,7 @@
             </div>
             <!-- Tambah Pendamping -->
             <div class=" h-full w-full bg-white p-8 rounded-md">
-                <h1 class=" text-[32px] font-semibold"> Tambah Pendamping</h1>
+                <h1 class=" text-[29px] md:text-[32px] font-semibold"> Tambah Pendamping</h1>
                 <form action="">
                     <div class=" py-4 pt-12">
                         <input type="text" placeholder=" Pilih User" class="h-[58px] w-full bg-[#FAFAFA] border">
@@ -72,21 +73,24 @@
             </div>
         </div>
         <!-- Detail Pendamping -->
-        <div class=" flex w-[48%] h-[600px] gap-10">
+        <div class=" flex md:w-[48%] h-[600px] gap-10">
             <div class=" h-full w-full bg-white p-8 rounded-md">
                 <div class=" flex flex-col items-center">
-                    <h1 class=" text-[32px] font-semibold py-6">Detail Pendamping</h1>
+                    <h1 class=" text-[29px] md:text-[32px] font-semibold py-6">Detail Pendamping</h1>
                     <div class=" py-5">
                         <div class=" h-[241px] w-[241px] bg-[#D9D9D9] rounded-full">
                         </div>
                     </div>
                     <div class=" flex flex-col items-center pt-6">
-                        <h1 class=" text-[32px]  font-semibold"> Nama Pendamping</h1>
+                        <h1 class=" text-[29px] md:text-[32px]  font-semibold"> Nama Pendamping</h1>
                         <p class=" text-[20px]">Pendamping Teknis</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class=" w-full text-start p-5 pl-[60px] md:pl-[65px] shadow-sm">
+        <span> © 2023 <span class=" text-red-500 text-[14px]">jruhub.com.</span> All rights reserved.</span>
     </div>
 </template>
 <script setup>

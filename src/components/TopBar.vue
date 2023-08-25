@@ -1,7 +1,7 @@
 <template>
-    <div class=" w-full flex">
+    <div class=" w-full">
         <!-- topbar -->
-        <div class=" h-[190px] w-full bg-red-500 flex items-center flex-col pt-7 px-10 ">
+        <div class=" h-[190px] md:w-full bg-red-500 md:flex items-center md:flex-col pt-7 px-10 ">
             <div class=" w-full mb-14 flex justify-between mx-7">
                 <div class=" flex gap-10 items-center">
                     <i @click="toggleSideBar" class="fa-solid fa-bars text-white text-2xl"></i>

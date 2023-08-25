@@ -1,13 +1,15 @@
 <template >
-    <div class=" h-full w-full gap-7  pr-[90px] font-inter p-12"
-        :class="sideBar.openSideBar ? 'pl-14 pr-[6%] duration-300' : 'pl-[7%] duration-300'">
-        <div class=" h-[487px] gap-10 flex mb-6">
+    <div class=" h-[2000px] md:h-full w-full gap-7  md:pr-[90px] font-inter p-7 md:p-12"
+        :class="sideBar.openSideBar ? 'md:px-10 md:pr-[27%] duration-300' : 'md:pl-[7%] duration-300'">
+        <div class="  md:h-[487px] gap-10 flex flex-col md:flex-row mb-6 pt-14 md:pt-0">
             <!-- chart -->
-            <div class=" w-full h-full bg-white flex items-center justify-center rounded-md">
-                <DoughnutChart :chart-data="data" :options="options" css-classes="chart-container" />
+            <div class="  h-[250px]  md:w-full md:h-full bg-white flex items-center justify-center rounded-md">
+                <div class="">
+                    <DoughnutChart :chart-data="data" :options="options" css-classes="chart-container" />
+                </div>
             </div>
             <!-- form isi -->
-            <div class=" w-full h-full bg-white p-8 rounded-md ">
+            <div class=" w-full md:h-full bg-white p-8 rounded-md ">
                 <form action="">
                     <h1 class=" text-[32px] font-[700] mb-5">Tambah Pemilik</h1>
                     <div class=" my-8">
@@ -15,7 +17,8 @@
                             class=" w-full h-[57px] border-[2px] bg-[#FAFAFA]">
                         <ul v-if="showUserList" class=" mt-2 absolute w-[450px] z-10">
                             <li class=" bg-opacity-70 bg-black text-white rounded-b-sm p-2 cursor-pointer"
-                                v-for="user in filteredUsers" :key="user.id" @click="selectUser(user)">{{ user.name }}</li>
+                                v-for="user in filteredUsers" :key="user.id" @click="selectUser(user)">{{ user.name }}
+                            </li>
                         </ul>
                     </div>
                     <div class=" my-8 -z-10">
@@ -37,12 +40,12 @@
             </div>
         </div>
 
-        <div class=" w-full h-[691px] gap-10 flex">
+        <div class="  w-full h-[691px] gap-10 flex flex-col md:flex-row">
             <!-- Pemilik -->
-            <div class=" w-[92%] h-[487px] bg-white p-10 rounded-md">
+            <div class=" md:w-[92%] h-[487px] bg-white p-10 rounded-md">
                 <div class=" flex justify-between">
                     <h1 class=" text-[32px] font-[600]">Pemilik</h1>
-                    <i class="fa-solid fa-up-right-from-square text-[25px]"></i>
+                    <i class="fa-solid fa-up-right-from-square text-[20px] md:text-[25px]"></i>
                 </div>
                 <div>
                     <table class=" w-full mt-10">
@@ -99,12 +102,14 @@
             </div>
             <!-- nama pemilik -->
             <div class=" w-full h-full bg-white p-10 rounded-md">
-                <h1 class=" text-[30px] font-[600]">Nama Pemilik</h1>
-                <div class=" pl-10 mt-14">
-                    <div class=" w-[241px] h-[241px] rounded-full bg-[#D9D9D9]"></div>
+                <h1 class=" text-[27px] md:text-[30px] font-[600]">Nama Pemilik</h1>
+                <div class=" md:pl-10 mt-14 flex flex-col items-center md:items-start ">
+                    <div class=" w-[200px] h-[200px] md:w-[241px] md:h-[241px] rounded-full bg-[#D9D9D9]">
+                        <img src="" alt="">
+                    </div>
                     <div class=" flex justify-start">
-                        <div class=" py-10 flex flex-col items-center ">
-                            <h2 class=" text-[29px] font-[500] py-2">Harsana Budiyanto</h2>
+                        <div class=" py-10 flex flex-col items-center">
+                            <h2 class=" text-[25px] md:text-[29px] font-[500] py-2">Harsana Budiyanto</h2>
                             <p class="text-[13px] font-[500]"> budiyanto.harsana@gmail.com</p>
                         </div>
                     </div>
@@ -113,6 +118,9 @@
             </div>
         </div>
 
+    </div>
+    <div class=" w-full text-start p-5 pl-[60px] md:pl-[65px] shadow-sm">
+        <span> © 2023 <span class=" text-red-500 text-[14px]">jruhub.com.</span> All rights reserved.</span>
     </div>
 </template>
 

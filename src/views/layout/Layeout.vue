@@ -1,35 +1,46 @@
 <template>
     <div class="w-full h-full flex">
-        <!-- penggunaan pinia haarus lebih spesifik agar bisa di gunakan -->
-        <Sidebar :dataOpenSideBar="openSideBar.openSideBar" />
-        <div class=" h-full" :class="openSideBar.openSideBar ? 'ml-[150px] md:ml-[300px] duration-300' : 'w-full'">
-            <TopBar :toggleSideBar="openSideBar.toggleSideBar" :openSideBar="openSideBar.openSideBar" />
-            <div class=" h-full bg-slate-200"
-                :class="openSideBar.openSideBar ? 'w-[10px] md:w-[80%] duration-300' : 'w-full duration-300'">
+        <Sidebar :dataOpenSideBar="openSideBar.openSideBar" class=" z-10">
+        </Sidebar>
+        <div :class="{
+            'md:ml-[300px] w-full duration-300': openSideBar.openSideBar,
+            'w-full duration-300': !openSideBar.openSideBar
+        }">
+            <TopBar class=" hidden md:block" :toggleSideBar="openSideBar.toggleSideBar"
+                :openSideBar="openSideBar.openSideBar" />
+            <TopBarResponsif :toggleSideBar="openSideBar.toggleSideBar" :openSideBar="openSideBar.openSideBar"
+                class=" md:hidden "></TopBarResponsif>
+
+            <div @click="toggleCloseBar">
                 <router-view></router-view>
             </div>
+
         </div>
     </div>
 </template>
 
-
 <script setup>
 import TopBar from '../../components/TopBar.vue'
+import TopBarResponsif from '../../components/TopBarResponsif.vue';
 import Sidebar from '../../components/SideBar.vue'
 import { useSidebarStore } from '../../stores/Store.js';
 
-//cara penggunaan pinia
 const openSideBar = useSidebarStore()
 
-// import { ref } from 'vue';
+//menutup layar mobile satu arah saja
+const toggleCloseBar = () => {
+    if (window.innerWidth < 768) {
+        openSideBar.closeSideBar()
+    }
+}
 
-// const openSideBar = ref(true);
-
-// const togleSideBar = () => {
-//     openSideBar.value = !openSideBar.value
-// }
+//ketika di reload gak tampil
+if (window.innerWidth < 768) {
+    openSideBar.openSideBar = false;
+}
 
 
 </script>
-
+  
 <style></style>
+  

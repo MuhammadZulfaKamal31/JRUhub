@@ -1,9 +1,9 @@
 <template >
-    <div class=" w-full h-full p-11 pr-[90px] pt-14 flex gap-7"
-        :class="sideBar.openSideBar ? ' pl-14 duration-300' : ' pl-24 duration-300'">
-        <div class=" w-[90%] h-full flex flex-col gap-10">
+    <div class=" w-full h-full md:p-11 px-7 md:pr-[90px] pt-24 md:pt-14 flex flex-col md:flex-row gap-7"
+        :class="sideBar.openSideBar ? ' md:pr-[27%] duration-300' : ' md:pl-24 duration-300'">
+        <div class=" md:w-[90%] h-full flex flex-col gap-10">
             <!-- karyawan -->
-            <div class=" w-full h-[428px] bg-white p-10">
+            <div class=" w-full h-[428px] bg-white p-10 rounded-md">
                 <h1 class=" text-[32px] font-[600]">Karyawan</h1>
                 <table class=" w-full mt-10">
                     <thead>
@@ -57,11 +57,11 @@
                 </table>
             </div>
             <!-- detil karyawan -->
-            <div class=" w-full h-full bg-white p-10">
+            <div class=" w-full h-full bg-white p-10 rounded-md">
                 <h1 class=" text-[32px] font-[600]"> Detil Karyawan</h1>
-                <div class=" pl-7 mt-7">
+                <div class=" md:pl-7 mt-7">
                     <div class=" w-[241px] h-[241px] rounded-full bg-[#D9D9D9]"></div>
-                    <div class=" flex justify-start">
+                    <div class=" flex md:justify-start">
                         <div class=" py-10 flex flex-col items-center ">
                             <h2 class=" text-[29px] font-[500] py-2">Harsana Budiyanto</h2>
                             <p class="text-[13px] font-[500]"> budiyanto.harsana@gmail.com</p>
@@ -91,7 +91,7 @@
             </div>
         </div>
         <!-- Tambah Karyawan -->
-        <div class=" w-full h-full bg-white p-10">
+        <div class=" w-full h-full bg-white p-10 rounded-md">
             <h1 class=" text-[32px] font-[500] pb-5">Tambah Karyawan</h1>
             <form action="">
                 <div class=" py-4">
@@ -120,7 +120,9 @@
                 <button class=" bg-red-600 p-4 text-center w-full text-white">Simpan</button>
             </form>
         </div>
-
+    </div>
+    <div class=" w-full text-start p-5 pl-[60px] md:pl-[65px] shadow-sm">
+        <span> © 2023 <span class=" text-red-500 text-[14px]">jruhub.com.</span> All rights reserved.</span>
     </div>
 </template>
 <script setup>

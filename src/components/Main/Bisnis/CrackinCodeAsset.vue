@@ -1,8 +1,9 @@
 <template >
-    <div class=" h-full w-full p-14 flex flex-col gap-8 pr-[90px]" :class="sideBar.openSideBar ? ' ' : ' pl-24'">
-        <div class=" h-[855px] w-full flex gap-8">
+    <div class=" h-full w-full p-7 pt-20 md:p-14 flex flex-col gap-8 md:pr-[90px]"
+        :class="sideBar.openSideBar ? 'md:pr-[27%] ' : ' md:pl-24'">
+        <div class=" md:h-[855px] w-full flex flex-col md:flex-row gap-8">
             <!-- Asset -->
-            <div class=" bg-white w-full h-[748px] p-10 px-20 rounded-md">
+            <div class=" bg-white w-full md:h-[748px] p-10 md:px-20 rounded-md">
                 <div class=" flex justify-between">
                     <h1 class=" text-[32px] font-semibold">Asset</h1>
                     <i class="fa-solid fa-up-right-from-square text-2xl"></i>
@@ -87,25 +88,25 @@
             </div>
         </div>
         <!-- Detail Asset -->
-        <div class=" h-[744px] w-full bg-white rounded-md p-10">
+        <div class=" md:h-[744px] w-full bg-white rounded-md p-10">
             <h1 class=" text-[32px] font-semibold"> Detail Asset</h1>
             <div class=" h-full w-full flex gap-10">
                 <div class=" w-full h-full">
-                    <div class=" my-10">
+                    <div class=" my-10 mb-[80px] md:mb-0">
                         <label for="" class=" text-[14px] font-semibold py-5"> Nama Asset</label>
-                        <p class=" text-[32px] font-semibold"> Macbook Pro 2015 Early</p>
+                        <p class=" text-[29px] md:text-[32px] font-semibold"> Macbook Pro 2015 Early</p>
                     </div>
                     <div class=" my-10">
                         <label for="" class=" text-[14px] font-semibold py-5"> Kondisi</label>
-                        <p class=" text-[32px] font-semibold"> Normal</p>
+                        <p class=" text-[29px] md:text-[32px] font-semibold"> Normal</p>
                     </div>
                     <div class=" my-10">
                         <label for="" class=" text-[14px] font-semibold py-5"> Jumlah Asset</label>
-                        <p class=" text-[32px] font-semibold"> 1 </p>
+                        <p class=" text-[29px] md:text-[32px] font-semibold"> 1 </p>
                     </div>
                     <div class=" my-10">
                         <label for="" class=" text-[14px] font-semibold py-5"> Tanggal Pembelian</label>
-                        <p class=" text-[32px] font-semibold"> 12-Agustus 2022</p>
+                        <p class=" text-[27px] md:text-[32px] font-semibold"> 12-Agustus 2022</p>
                     </div>
                 </div>
                 <div class=" h-full w-full">
@@ -115,7 +116,7 @@
                     </div>
                     <div>
                         <p class=" text-[14px] font-semibold my-9"> Foto Asset</p>
-                        <div class=" flex flex-wrap gap-10">
+                        <div class=" flex flex-wrap overflow-auto gap-10">
                             <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
                             <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
                             <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
@@ -123,9 +124,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
+        </div>
+        <div class=" w-full text-start p-5 pl-[60px] md:pl-[65px] shadow-sm">
+            <span> © 2023 <span class=" text-red-500 text-[14px]">jruhub.com.</span> All rights reserved.</span>
         </div>
     </div>
 </template>
