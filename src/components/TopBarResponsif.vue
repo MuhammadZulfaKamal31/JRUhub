@@ -1,8 +1,8 @@
 <template>
-    <div class=" flex justify-between items-center w-screen h-[65px] bg-red-600 px-10 fixed z-10">
+    <div class=" flex justify-between items-center w-screen h-[65px] bg-red-600 px-9 fixed z-10">
         <div class=" flex items-center gap-6">
             <i @click="toggleSideBar" class="fa-solid fa-bars text-white text-xl"></i>
-            <input type="text" class=" h-6 w-30">
+            <input type="text" class=" h-6 w-[80%]">
         </div>
 
         <div @click="toggleDropDown" class="h-[35px] w-[35px] bg-white flex items-center rounded-full">
@@ -13,7 +13,8 @@
         <div v-show="showDropDown" class=" absolute right-[40px] top-[3.5rem] z-10 mt-2 md:w-[119px] origin-top-right rounded-md bg-white shadow-lg ring-1
                 ring-black ring-opacity-5 focus:outline-none">
             <div class="py-1 text-left">
-                <router-link to="/Dashboard/Profile" class=" block px-4 py-2 text-sm" role="menuitem" id=" menu-item-2">
+                <router-link to="/Dashboard/Profile/Profile" class=" block px-4 py-2 text-sm" role="menuitem"
+                    id=" menu-item-2">
                     <span class="fa-solid fa-gauge"></span> Pofile</router-link>
                 <form method="POST" action="" role="none">
                     <button type="submit" class=" block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1"

@@ -1,6 +1,6 @@
 <template >
-    <div class=" w-full h-full md:p-11 px-7 md:pr-[90px] pt-24 md:pt-14 flex flex-col md:flex-row gap-7"
-        :class="sideBar.openSideBar ? ' md:pr-[27%] duration-300' : ' md:pl-24 duration-300'">
+    <div class=" w-full h-full md:p-11 px-7 pt-24 md:pt-14 flex flex-col md:flex-row gap-7"
+        :class="sideBar.openSideBar ? ' md:pr-[375px] duration-300' : ' md:px-24 duration-300'">
         <div class=" md:w-[90%] h-full flex flex-col gap-10">
             <!-- karyawan -->
             <div class=" w-full h-[428px] bg-white p-10 rounded-md">
@@ -126,7 +126,7 @@
     </div>
 </template>
 <script setup>
-import { useSidebarStore } from '../../../stores/Store';
+import { useSidebarStore } from '../../stores/Store';
 
 const sideBar = useSidebarStore();
 

@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class=" hidden md:block md:w-[1220px]">
-            <img src="../../public/Rectangle12.png" class=" w-full h-full object-contain" alt="">
+            <img src="../../../public/Rectangle12.png" class="w-full h-full object-contain" alt="">
         </div>
     </div>
 </template>
@@ -62,7 +62,8 @@ const login = () => {
     if (!email.value || !password.value) {
         error.value = "Email dan Password harus di isi"
     } else {
-        router.push({ name: 'HalUtama' })
+        const username = 'Dashboard';
+        router.push({ name: 'HalUtama', params: { username: username } })
     }
 }
 

@@ -43,7 +43,8 @@
                         <div class=" w-full px-3 md:px-10 bg-white py-3 md:p-6 rounded-md">
                             <div class=" flex justify-between">
                                 <h1 class="text-xl">Pendapatan</h1>
-                                <i class="fa-solid fa-up-right-from-square"></i>
+                                <router-link to="/Dashboard/Pendapatan/Pendapatan"
+                                    class="fa-solid fa-up-right-from-square"></router-link>
                             </div>
                             <div class="m-1">
                                 <label class=" font-[500] text-[13px] text-slate-400" for="">Gaji</label>
@@ -59,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- curcle -->
+                    <!-- circle -->
                     <div class=" h-full w-full bg-white mb-10 rounded-md p-6">
                         <h1 class=" text-2xl">Circle</h1>
                         <div class=" flex items-center my-3">

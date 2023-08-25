@@ -1,6 +1,6 @@
 <template>
-    <div class=" h-full w-full pt-20 px-7  md:p-14  gap-6 flex flex-col md:pr-[90px]"
-        :class="sideBar.openSideBar ? 'md:pr-[27%]' : ' md:pl-24'">
+    <div class=" h-full w-full pt-20 px-7  md:p-14  gap-6 flex flex-col "
+        :class="sideBar.openSideBar ? 'md:pr-[375px]' : ' md:px-24'">
         <div class=" md:h-[487px] w-full flex flex-col md:flex-row gap-10">
             <!-- Pendamping -->
             <div class="h-full  w-full bg-white p-8 rounded-md">
@@ -18,28 +18,28 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4 pt-6  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]">Teknis</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]"> Strategis </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]"> Fasilitator</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600]"> Fasilitator</td>
@@ -94,7 +94,7 @@
     </div>
 </template>
 <script setup>
-import { useSidebarStore } from '../../../stores/Store';
+import { useSidebarStore } from '../../stores/Store';
 
 const sideBar = useSidebarStore()
 </script>

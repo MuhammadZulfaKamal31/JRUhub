@@ -6,7 +6,7 @@
         <div class=" w-full h-[700px] md:h-[475px] bg-white rounded-md p-7">
             <div class=" flex justify-between">
                 <div class=" flex items-center md:h-[150px]">
-                    <img class=" h-11 md:h-32" src="../../../assets/Rectangle38.png" alt="">
+                    <img class=" h-11 md:h-32" src="../../assets/Rectangle38.png" alt="">
                     <div class="p-4">
                         <h2 class=" text-[20px] md:text-[40px] font-[700]"> CrackinCode</h2>
                         <p class=" text-[15px] md:text-[20px] md:w-[300]">Est.30 juni 2022</p>
@@ -47,29 +47,37 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]">30%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> 20% </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> 20%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> 10%</td>
                         </tr>
@@ -92,29 +100,37 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]">30%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> 20% </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> 20%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                CrackinCode
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                    CrackinCode
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> 10%</td>
                         </tr>
@@ -139,36 +155,46 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Karyawan
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                    Karyawan
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]">admin</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Karyawan
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                    Karyawan
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> admin </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Karyawan
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                    Karyawan
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> admin</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Karyawan
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                    Karyawan
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> admin</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Karyawan
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                    Karyawan
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> admin</td>
                         </tr>
@@ -191,36 +217,46 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Asset
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                    Asset
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]">Baik</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Asset
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                    Asset
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> Boncel </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Asset
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                    Asset
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> Baik</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Asset
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                    Asset
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> Hilang</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
-                                Asset
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
+                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                    Asset
+                                </router-link>
                             </td>
                             <td class="text-[15px] font-[600]"> Hilang</td>
                         </tr>
@@ -275,7 +311,7 @@
     </div>
 </template>
 <script setup>
-import { useSidebarStore } from '../../../stores/Store';
+import { useSidebarStore } from '../../stores/Store';
 
 const openSideBar = useSidebarStore()
 

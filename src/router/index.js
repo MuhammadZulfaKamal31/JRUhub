@@ -1,20 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Login from '../views/Login.vue';
-import Register from '../views/Register.vue'
-import HalUtama from '../components/Main/HalUtama.vue'
-import Profile from '../components/Main/Profile.vue'
-import Pendapatan from '../components/Main/Pendapatan.vue'
-import Bisnis from '../components/Main/Bisnis/Bisnis.vue'
-import BisnisSaya from '../components/Main/Bisnis/BisnisSaya.vue';
+import Login from '../views/User/Login.vue';
+import Register from '../views/User/Register.vue'
+import HalUtama from '../views/Business/HalUtama.vue'
+import Profile from '../views/User/Profile.vue'
+import Pendapatan from '../views/User/Pendapatan.vue'
+import Bisnis from '../views/Business/Bisnis.vue'
+import BisnisSaya from '../views/Business/My-Business.vue';
 import Layout from '../views/layout/Layeout.vue'
-import Pendampingan from '../components/Main/Pendampingan.vue'
-import Circle from '../components/Main/Circle.vue'
-import Komune from '../components/Main/Komune.vue'
-import CrackinCode from '../components/Main/Bisnis/CrackinCode.vue'
-import CrackinCodeKaryawan from '../components/Main/Bisnis/CrackinCodeKaryawan.vue'
-import CrackinCodePendamping from "../components/Main/Bisnis/CrackinCodePendamping.vue"
-import CrackinCodeAsset from "../components/Main/Bisnis/CrackinCodeAsset.vue"
+import Pendampingan from '../views/Pendampingan/Pendampingan.vue'
+import Circle from '../views/Circle/Circle.vue'
+import Komune from '../views/Circle/Komune.vue'
+import CrackinCode from '../views/Business/CrackinCode.vue'
+import CrackinCodeKaryawan from '../views/Business/CrackinCodeKaryawan.vue'
+import CrackinCodePendamping from "../views/Business/CrackinCodePendamping.vue"
+import CrackinCodeAsset from "../views/Business/CrackinCodeAsset.vue"
 
 import SideBar from '../components/SideBar.vue'
 
@@ -34,7 +34,7 @@ const router = createRouter({
       name: 'Register',
       component: Register
     }, {
-      path: '/Dashboard/',
+      path: '/Dashboard/:username',
       name: 'Dashboard',
       component: Layout,
       children: [
@@ -64,17 +64,17 @@ const router = createRouter({
           component: BisnisSaya
         },
         {
-          path: 'Pendampingan',
+          path: 'pendampingan',
           name: 'Pendampingan',
           component: Pendampingan
         },
         {
-          path: 'Circle',
+          path: 'circle',
           name: 'Circle',
           component: Circle
         },
         {
-          path: 'Komune',
+          path: 'komune',
           name: 'Komune',
           component: Komune
         },
@@ -84,17 +84,17 @@ const router = createRouter({
           component: CrackinCode
         },
         {
-          path: 'Crackin_Code_Karyawan',
+          path: 'CrackinCode_Karyawan',
           name: 'CrackinCodKaryawan',
           component: CrackinCodeKaryawan
         },
         {
-          path: 'Crackin_Code_Pendamping',
+          path: 'CrackinCode_Pendamping',
           name: 'CrackinCodePendamping',
           component: CrackinCodePendamping
         },
         {
-          path: 'Crackin_Code_Asset',
+          path: 'CrackinCode_Asset',
           name: 'CrackinCodeAsset',
           component: CrackinCodeAsset
         }

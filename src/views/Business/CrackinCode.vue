@@ -1,6 +1,6 @@
 <template >
-    <div class=" h-[2000px] md:h-full w-full gap-7  md:pr-[90px] font-inter p-7 md:p-12"
-        :class="sideBar.openSideBar ? 'md:px-10 md:pr-[27%] duration-300' : 'md:pl-[7%] duration-300'">
+    <div class=" h-[2000px] md:h-full w-full gap-7 font-inter p-7 md:p-12"
+        :class="sideBar.openSideBar ? 'md:px-10 md:pr-[25%] duration-300' : 'md:px-[7%] duration-300'">
         <div class="  md:h-[487px] gap-10 flex flex-col md:flex-row mb-6 pt-14 md:pt-0">
             <!-- chart -->
             <div class="  h-[250px]  md:w-full md:h-full bg-white flex items-center justify-center rounded-md">
@@ -130,7 +130,7 @@ import { DoughnutChart } from "vue-chart-3"
 import { Chart, DoughnutController, ArcElement } from "chart.js"
 
 //=======================penyesuaian tampilan=======================================
-import { useSidebarStore } from '../../../stores/Store';
+import { useSidebarStore } from '../../stores/Store';
 const sideBar = useSidebarStore()
 //========================chart js =================================================
 // Mendaftarkan modul Chart.js yang dibutuhkan

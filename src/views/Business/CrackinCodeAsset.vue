@@ -1,6 +1,6 @@
 <template >
-    <div class=" h-full w-full p-7 pt-20 md:p-14 flex flex-col gap-8 md:pr-[90px]"
-        :class="sideBar.openSideBar ? 'md:pr-[27%] ' : ' md:pl-24'">
+    <div class=" h-full w-full p-7 pt-20 md:p-14 flex flex-col gap-8"
+        :class="sideBar.openSideBar ? 'md:pr-[375px] ' : ' md:px-24'">
         <div class=" md:h-[855px] w-full flex flex-col md:flex-row gap-8">
             <!-- Asset -->
             <div class=" bg-white w-full md:h-[748px] p-10 md:px-20 rounded-md">
@@ -18,28 +18,28 @@
                     <tbody>
                         <tr class="">
                             <td class=" py-4 pt-8  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600] text-end">30%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600] text-end"> 25% </td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600] text-end"> 20%</td>
                         </tr>
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../../assets/Rectangle10.png" alt="">
+                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
                                 Owner
                             </td>
                             <td class="text-[15px] font-[600] text-end"> 15%</td>
@@ -112,15 +112,15 @@
                 <div class=" h-full w-full">
                     <div>
                         <p class=" text-[14px] font-semibold my-9"> Foto Nota Pembelian</p>
-                        <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
+                        <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
                     </div>
                     <div>
                         <p class=" text-[14px] font-semibold my-9"> Foto Asset</p>
                         <div class=" flex flex-wrap overflow-auto gap-10">
-                            <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
-                            <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
-                            <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
-                            <img src="../../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
+                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
+                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
+                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
+                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
     </div>
 </template>
 <script setup>
-import { useSidebarStore } from '../../../stores/Store';
+import { useSidebarStore } from '../../stores/Store';
 
 const sideBar = useSidebarStore();
 

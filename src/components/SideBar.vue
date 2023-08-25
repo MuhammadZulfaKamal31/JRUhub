@@ -10,7 +10,7 @@
                 <div class=" mx-5 my-5 text-[11px] w-[59px] text-[#A3A3A3] font-[500]">Dashboard</div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/Dashboard/Dashboard">
+                        to="/Dashboard/Dashboard/Dashboard">
                         <span class="fa-solid fa-gauge hidden md:block">
                         </span>
                         <span> Dashboard</span>
@@ -20,7 +20,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/Dashboard/Bisnis_Saya">
+                        to="/Dashboard/Bisnis_Saya/Bisnis">
                         <span class="fa-solid fa-gauge hidden md:block">
                         </span>
                         <span>
@@ -30,7 +30,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/Dashboard/Pendampingan"><span class="fa-solid fa-gauge hidden md:block"></span>
+                        to="/Dashboard/Pendampingan/Pendampingan"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             Pendampingan
                         </span>
@@ -38,7 +38,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/dashboard/Circle"><span class="fa-solid fa-gauge hidden md:block"></span>
+                        to="/dashboard/Circle/Circle"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             Circle
                         </span>
