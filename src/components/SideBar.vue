@@ -9,49 +9,51 @@
             <div class="">
                 <div class=" mx-5 my-5 text-[11px] w-[59px] text-[#A3A3A3] font-[500]">Dashboard</div>
                 <div class=" my-3">
-                    <a class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1" href="/Dashboard/Dashboard">
+                    <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
+                        to="/Dashboard/Dashboard">
                         <span class="fa-solid fa-gauge hidden md:block">
                         </span>
                         <span> Dashboard</span>
-                    </a>
+                    </router-link>
                 </div>
                 <div class=" mx-5 my-5 text-[11px] w-[59px] text-[#A3A3A3] font-[500]">Businness
                 </div>
                 <div class=" my-3">
-                    <a class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1" href="/Dashboard/Bisnis_Saya">
+                    <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
+                        to="/Dashboard/Bisnis_Saya">
                         <span class="fa-solid fa-gauge hidden md:block">
                         </span>
                         <span>
                             My Businness
                         </span>
-                    </a>
+                    </router-link>
                 </div>
                 <div class=" my-3">
-                    <a class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        href="/dashboard/Pendampingan"><span class="fa-solid fa-gauge hidden md:block"></span>
+                    <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
+                        to="/Dashboard/Pendampingan"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             Pendampingan
                         </span>
-                    </a>
+                    </router-link>
                 </div>
                 <div class=" my-3">
-                    <a class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1" href="/dashboard/Circle"><span
-                            class="fa-solid fa-gauge hidden md:block"></span>
+                    <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
+                        to="/dashboard/Circle"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             Circle
                         </span>
-                    </a>
+                    </router-link>
                 </div>
                 <div class=" mx-5 my-5 text-[11px] w-[59px] text-[#A3A3A3] font-[500] flex flex-row items-center gap-1">
                     JRUHUB</div>
                 <div class=" my-3">
-                    <a class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        href="/dashboard/Crackin_code_karyawan">
+                    <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
+                        to="/Dashboard/Crackin_Code_Karyawan">
                         <span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             JRUWAY
                         </span>
-                    </a>
+                    </router-link>
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"

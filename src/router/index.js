@@ -64,17 +64,17 @@ const router = createRouter({
           component: BisnisSaya
         },
         {
-          path: 'pendampingan',
+          path: 'Pendampingan',
           name: 'Pendampingan',
           component: Pendampingan
         },
         {
-          path: 'circle',
+          path: 'Circle',
           name: 'Circle',
           component: Circle
         },
         {
-          path: 'komune',
+          path: 'Komune',
           name: 'Komune',
           component: Komune
         },

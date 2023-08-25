@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen flex mt-3 md:items-center justify-center">
+    <div class="h-screen w-screen flex pt-5 md:items-center justify-center">
         <div class=" h-[600px] w-[350px] md:h-[665px] md:w-[427px] border border-[#EB666B] rounded-xl">
             <form @submit.prevent="register" class=" font-inter md:w-[329px] mx-5 md:mx-12 relative">
                 <h1 class=" text-2xl md:text-3xl text-center my-3 md:mt-10"> Wellcome to<span
