@@ -4,7 +4,7 @@
             :class="sideBar.openSideBar ? ' md:pr-[350px] md:pl-10' : ' md:px-20'">
             <div class="flex flex-wrap mx-4 bg-white p-10 rounded-md">
                 <div v-for="i in 10" class=" w-1/2 md:w-1/5 px-4 mb-4">
-                    <router-link to="/Dashboard/Bisnis_saya/Bisnis_Saya">
+                    <router-link to="/Layeout/Bisnis_saya/Bisnis_Saya/1">
                         <div class="h-full border rounded-md overflow-hidden shadow-xl">
                             <img src="../../assets/Rectangle38.png" alt="" class="object-cover w-full">
                             <h5 class="p-4 text-[14px] font-semibold">Studio {{ i }}</h5>

@@ -37,7 +37,7 @@
                     <div class=" flex flex-col md:flex-row gap-3 md:gap-10 md:h-[725px] w-full rounded-md">
                         <!-- lingkaran -->
                         <div class="  w-full  md:w-[80%] bg-white flex justify-center items-center rounded-md">
-                            <img class=" h-[175px] w-[175px]" src="../../assets/Ellipse21.png" alt="">
+                            <img class=" h-[175px] w-[175px]" src="./../../assets/Ellipse21.png" alt="">
                         </div>
                         <!-- pendapatan -->
                         <div class=" w-full px-3 md:px-10 bg-white py-3 md:p-6 rounded-md">
@@ -64,7 +64,7 @@
                     <div class=" h-full w-full bg-white mb-10 rounded-md p-6">
                         <h1 class=" text-2xl">Circle</h1>
                         <div class=" flex items-center my-3">
-                            <img class=" h-[70px] w-[70px] rounded-full" src="../../assets/Ellipse21.png" alt="">
+                            <img class=" h-[70px] w-[70px] rounded-full" src="./../../assets/Ellipse21.png" alt="">
                             <div class=" mx-3">
                                 <h1 class=" text-xl mb-3">Komune</h1>
                                 <p class=" text-[13px]">

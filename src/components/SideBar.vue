@@ -10,7 +10,7 @@
                 <div class=" mx-5 my-5 text-[11px] w-[59px] text-[#A3A3A3] font-[500]">Dashboard</div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/Dashboard/Dashboard/Dashboard">
+                        to="/Layeout/Dashboard">
                         <span class="fa-solid fa-gauge hidden md:block">
                         </span>
                         <span> Dashboard</span>
@@ -20,7 +20,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/Dashboard/Bisnis_Saya/Bisnis">
+                        to="/Layeout/Bisnis_Saya/Bisnis">
                         <span class="fa-solid fa-gauge hidden md:block">
                         </span>
                         <span>
@@ -30,7 +30,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/Dashboard/Pendampingan/Pendampingan"><span class="fa-solid fa-gauge hidden md:block"></span>
+                        to="/Layeout/Pendampingan/Pendampingan"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             Pendampingan
                         </span>
@@ -38,7 +38,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/dashboard/Circle/Circle"><span class="fa-solid fa-gauge hidden md:block"></span>
+                        to="/Layeout/Circle/Circle"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             Circle
                         </span>
@@ -48,7 +48,7 @@
                     JRUHUB</div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/Dashboard/Crackin_Code_Karyawan">
+                        to="/Layeout/Crackin_Code_Karyawan">
                         <span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             JRUWAY
@@ -57,7 +57,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/dashboard/Crackincode"><span class="fa-solid fa-gauge hidden md:block"></span>
+                        to="/Layeout/Crackincode"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             JRU INSTITUT
                         </span>
@@ -65,7 +65,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/dashboard/CRACKIN_CODE_Pendamping"><span class="fa-solid fa-gauge hidden md:block"></span>
+                        to="/Layeout/CRACKIN_CODE_Pendamping"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             JRUWORK
                         </span>
@@ -73,7 +73,7 @@
                 </div>
                 <div class=" my-3">
                     <router-link class=" mx-5 text-[14px] font-[600] flex flex-row items-center gap-1"
-                        to="/dashboard/Crackin_code_Asset"><span class="fa-solid fa-gauge hidden md:block"></span>
+                        to="/Layeout/Crackin_code_Asset"><span class="fa-solid fa-gauge hidden md:block"></span>
                         <span>
                             JRUPOS
                         </span>

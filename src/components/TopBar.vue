@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-full">
+    <div class=" w-screen">
         <!-- topbar -->
         <div class=" h-[190px] md:w-full bg-red-500 md:flex items-center md:flex-col pt-7 px-10 ">
             <div class=" w-full mb-14 flex justify-between mx-7">
@@ -18,7 +18,7 @@
                 <div class=" h-[80px] bg-white rounded-md flex items-center justify-start px-6"
                     :class="openSideBar ? ' mr-[20rem] w-[1010px] duration-300' : 'w-[1245px] duration-300'">
 
-                    <span class=" text-2xl font-[500]">{{ $route.params.username }}</span>
+                    <span class=" text-2xl font-[500]">{{ $route.params.judul }}</span>
                 </div>
             </div>
         </div>

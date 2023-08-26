@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomePage from '../views/HomePage.vue'
 import Login from '../views/User/Login.vue';
 import Register from '../views/User/Register.vue'
 import HalUtama from '../views/Business/HalUtama.vue'
@@ -10,36 +10,35 @@ import BisnisSaya from '../views/Business/My-Business.vue';
 import Layout from '../views/layout/Layeout.vue'
 import Pendampingan from '../views/Pendampingan/Pendampingan.vue'
 import Circle from '../views/Circle/Circle.vue'
-import Komune from '../views/Circle/Komune.vue'
-import CrackinCode from '../views/Business/CrackinCode.vue'
-import CrackinCodeKaryawan from '../views/Business/CrackinCodeKaryawan.vue'
-import CrackinCodePendamping from "../views/Business/CrackinCodePendamping.vue"
-import CrackinCodeAsset from "../views/Business/CrackinCodeAsset.vue"
+import DetailCircle from '../views/Circle/DetailCircle.vue'
+import DetailPemilik from '../views/Business/DetailPemilik.vue'
+import DetailKaryawan from '../views/Business/DetailKaryawan.vue'
+import DetailPendamping from "../views/Business/DetailPendamping.vue"
+import DetailAsset from "../views/Business/DetailAsset.vue"
 
-import SideBar from '../components/SideBar.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'HomePage',
+      component: HomePage
     }, {
-      path: '/login',
+      path: '/user/login',
       name: 'Login',
       component: Login
     }, {
-      path: '/register',
+      path: '/user/register',
       name: 'Register',
       component: Register
     }, {
-      path: '/Dashboard/:username',
-      name: 'Dashboard',
+      path: '/Layeout/:judul',
+      name: 'Layeout',
       component: Layout,
       children: [
         {
-          path: "Dashboard",
+          path: "",
           name: 'HalUtama',
           component: HalUtama
         },
@@ -59,7 +58,7 @@ const router = createRouter({
           component: Bisnis
         },
         {
-          path: 'Bisnis_Saya',
+          path: 'Bisnis_Saya/:id_detail',
           name: 'BisnisSaya',
           component: BisnisSaya
         },
@@ -74,29 +73,29 @@ const router = createRouter({
           component: Circle
         },
         {
-          path: 'komune',
-          name: 'Komune',
-          component: Komune
+          path: 'Detail_Circle/:id',
+          name: 'DetailCircle',
+          component: DetailCircle
         },
         {
-          path: 'CrackinCode',
-          name: 'CrackinCode',
-          component: CrackinCode
+          path: 'Detail_Pemilik/:id_pemilik',
+          name: 'Detail_Pemilik',
+          component: DetailPemilik
         },
         {
-          path: 'CrackinCode_Karyawan',
-          name: 'CrackinCodKaryawan',
-          component: CrackinCodeKaryawan
+          path: 'Detail_Karyawan/:id_karyawan',
+          name: 'DetailKaryawan',
+          component: DetailKaryawan
         },
         {
-          path: 'CrackinCode_Pendamping',
-          name: 'CrackinCodePendamping',
-          component: CrackinCodePendamping
+          path: 'Detail_Pendamping/:id_pendamping',
+          name: 'DetailPendamping',
+          component: DetailPendamping
         },
         {
-          path: 'CrackinCode_Asset',
-          name: 'CrackinCodeAsset',
-          component: CrackinCodeAsset
+          path: 'Detail_Asset:id_asset',
+          name: 'DetailAsset',
+          component: DetailAsset
         }
       ]
     }

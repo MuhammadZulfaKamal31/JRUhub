@@ -30,11 +30,11 @@
             </div>
             <div class="md:flex gap-4 pe-4 md:pe-20 md:flex-row flex-col md:visible"
                 :class="dropDown ? 'hidden duration-300' : ' visible duration-300'">
-                <router-link to="/login"
+                <router-link to="/user/login"
                     class="text-white text-center border border-red-600 block px-12 m-5 md:m-0  md:px-4 py-1 bg-red-600">
                     Masuk
                 </router-link>
-                <router-link to="/register"
+                <router-link to="/user/register"
                     class="text-red-600 text-center border border-red-600 block px-12 m-5 md:m-0  md:px-4 py-1 ">
                     Daftar
                 </router-link>

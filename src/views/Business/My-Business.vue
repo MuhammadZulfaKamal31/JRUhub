@@ -48,7 +48,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -57,7 +57,7 @@
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -66,7 +66,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -75,7 +75,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -101,7 +101,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -110,7 +110,7 @@
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -119,7 +119,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -128,7 +128,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Pendamping">
+                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
                                     CrackinCode
                                 </router-link>
                             </td>
@@ -156,7 +156,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
                                     Karyawan
                                 </router-link>
                             </td>
@@ -165,7 +165,7 @@
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
                                     Karyawan
                                 </router-link>
                             </td>
@@ -174,7 +174,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
                                     Karyawan
                                 </router-link>
                             </td>
@@ -183,7 +183,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
                                     Karyawan
                                 </router-link>
                             </td>
@@ -192,7 +192,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Karyawan">
+                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
                                     Karyawan
                                 </router-link>
                             </td>
@@ -218,7 +218,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
                                     Asset
                                 </router-link>
                             </td>
@@ -227,7 +227,7 @@
                         <tr class="">
                             <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
                                     Asset
                                 </router-link>
                             </td>
@@ -236,7 +236,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
                                     Asset
                                 </router-link>
                             </td>
@@ -245,7 +245,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
                                     Asset
                                 </router-link>
                             </td>
@@ -254,7 +254,7 @@
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Dashboard/CrackinCode/CrackinCode_Asset">
+                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
                                     Asset
                                 </router-link>
                             </td>

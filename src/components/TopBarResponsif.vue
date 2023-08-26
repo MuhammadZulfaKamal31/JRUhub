@@ -6,7 +6,7 @@
         </div>
 
         <div @click="toggleDropDown" class="h-[35px] w-[35px] bg-white flex items-center rounded-full">
-            <img src="../assets/Rectangle38.png" alt="" class=" rounded-full" />
+            <img src="./../assets/Rectangle38.png" alt="" class=" rounded-full" />
         </div>
 
         <!-- profile dropdown -->
