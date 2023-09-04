@@ -40,3 +40,6 @@ npm run test:unit
 npm run lint
 ```
 INGAT PROPS SELALU BERADA DI ELEMENT PARENT NYA
+
+
+http://localhost:5173/Layeout/CrackinCode/Detail_Asset/2

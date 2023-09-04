@@ -3,31 +3,19 @@
     <div class=" pt-20 md:pt-16  flex flex-col gap-8 flex-wrap "
         :class="openSideBar.openSideBar ? ' p-12  md:pr-[370px] duration-300' : 'p-12 md:p-20 md:pl-24 md:pr-24 duration-300 '">
         <!-- crackinCode -->
-        <div class=" w-full h-[700px] md:h-[475px] bg-white rounded-md p-7">
+        <div class=" w-full h-[700px] md:h-full bg-white rounded-md p-7">
             <div class=" flex justify-between">
                 <div class=" flex items-center md:h-[150px]">
-                    <img class=" h-11 md:h-32" src="../../assets/Rectangle38.png" alt="">
+                    <img class=" h-11 md:h-32" :src="'https://ac20-103-162-237-62.ngrok-free.app' + logoBisnis" alt="">
                     <div class="p-4">
-                        <h2 class=" text-[20px] md:text-[40px] font-[700]"> CrackinCode</h2>
+                        <h2 class=" text-[20px] md:text-[40px] font-[700]">{{ namaBisnis }}</h2>
                         <p class=" text-[15px] md:text-[20px] md:w-[300]">Est.30 juni 2022</p>
                     </div>
                 </div>
                 <span class="fa-solid fa-pen-to-square md:text-[25px]"></span>
             </div>
-            <p class=" text-[14px] md:text-[17px] p-2 md:p-9 w-full">Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Omnis ullam
-                eaque
-                sapiente
-                voluptate!
-                Nam
-                laboriosam dicta magni amet cum explicabo quod, voluptatem magnam ducimus qui. Tempora distinctio quia
-                cumque doloribus. <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, placeat sapiente!
-                Temporibus odio in ipsa quam dolores voluptas quia possimus impedit doloribus explicabo. Nisi impedit
-                amet eos praesentium officiis in? Lorem ipsum dolor sit,
-                <br>amet consectetur adipisicing elit. Libero
-                dignissimos consequatur repudiandae animi, ab suscipit assumenda vero cumque officiis quasi nostrum fuga
-                earum nisi hic vel. Atque officia tenetur voluptatibus.
+            <p class=" text-[14px] md:text-[17px] p-2 md:p-9 w-full">
+                {{ bisnis }}
             </p>
         </div>
         <div class=" flex flex-col md:flex-row gap-12 w-full h-full md:h-[505px] md:px-4">
@@ -44,43 +32,17 @@
                             <th class="text-[16px] font-[600] text-start">Share</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody v-for="  i  in  pemilik ">
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
-                                    CrackinCode
+                                <router-link :to="`/Layeout/CrackinCode/Detail_Pemilik/${id_bisnis}`">
+                                    {{ i.owner_user.username }}
                                 </router-link>
                             </td>
-                            <td class="text-[15px] font-[600]">30%</td>
+                            <td class="text-[15px] font-[600]">{{ i.owner_shares }}%</td>
                         </tr>
-                        <tr class="">
-                            <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
-                                    CrackinCode
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> 20% </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
-                                    CrackinCode
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> 20%</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pemilik/1">
-                                    CrackinCode
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> 10%</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -94,45 +56,18 @@
                     <thead>
                         <tr class=" py-4">
                             <th class=" text-[16px] font-[600] text-start ">Name</th>
-                            <th class="text-[16px] font-[600] text-start">Share</th>
+                            <th class="text-[16px] font-[600] text-start">Jenis Pendamping</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody v-for="i in pendamping ">
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
-                                    CrackinCode
+                                <router-link :to="`/Layeout/CrackinCode/Detail_Pendamping/${id_bisnis}`">
+                                    {{ i.companion_user.username }}
                                 </router-link>
                             </td>
-                            <td class="text-[15px] font-[600]">30%</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
-                                    CrackinCode
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> 20% </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
-                                    CrackinCode
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> 20%</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Pendamping/1">
-                                    CrackinCode
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> 10%</td>
+                            <td class="text-[15px] font-[600]">{{ i.companion_as.name }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -152,51 +87,15 @@
                             <th class="text-[18px] font-[600] text-start">Posisi</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody v-for="  i  in  karyawan ">
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
-                                    Karyawan
+                                <router-link :to="`/Layeout/CrackinCode/Detail_Karyawan/${i.business_id}`">
+                                    {{ i.employee_user.username }}
                                 </router-link>
                             </td>
-                            <td class="text-[15px] font-[600]">admin</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
-                                    Karyawan
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> admin </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
-                                    Karyawan
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> admin</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
-                                    Karyawan
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> admin</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Karyawan/1">
-                                    Karyawan
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> admin</td>
+                            <td class="text-[15px] font-[600]">{{ i.employee_position.jabatan }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -214,51 +113,16 @@
                             <th class="text-[18px] font-[600] text-start">Kondisi</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody v-for="  i  in  asset ">
                         <tr class="">
                             <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
-                                    Asset
+                                <img class=" w-[40px] h-[40px] rounded-full"
+                                    :src="'https://ac20-103-162-237-62.ngrok-free.app' + i.asset_receipt" alt="">
+                                <router-link :to="`/Layeout/CrackinCode/Detail_Asset/${i.business_id}`">
+                                    {{ i.asset_name }}
                                 </router-link>
                             </td>
-                            <td class="text-[15px] font-[600]">Baik</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
-                                    Asset
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> Boncel </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
-                                    Asset
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> Baik</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
-                                    Asset
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> Hilang</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                <router-link to="/Layeout/CrackinCode/Detail_Asset/1">
-                                    Asset
-                                </router-link>
-                            </td>
-                            <td class="text-[15px] font-[600]"> Hilang</td>
+                            <td class="text-[15px] font-[600]">{{ i.asset_condition }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -274,32 +138,14 @@
                         <th class="text-[17px] md:text-[20px] font-[600] text-start">Share</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody v-for=" i in target">
                     <tr class="">
                         <td class=" py-4  flex items-center gap-3 text-[14px] md:text-[15px] font-[600]">
-                            Menjadikan Kas menjadi 100 juta
+                            {{ i.target_description }}
                         </td>
-                        <td class="text-[14px] md:text-[15px] font-[600]"> Februari 2024</td>
+                        <td class="text-[14px] md:text-[15px] font-[600]"> {{ i.target_end_date }}</td>
                         <td class="text-[14px] md:text-[15px] font-[600]">
-                            <span class=" bg-[#00FFFF] p-2">On Going</span>
-                        </td>
-                    </tr>
-                    <tr class="">
-                        <td class=" py-4 flex items-center gap-3 text-[14px] md:text-[15px] font-[600]">
-                            Beli Asset
-                        </td>
-                        <td class="text-[14px] md:text-[15px] font-[600]"> Maret 2023 </td>
-                        <td class="text-[14px] md:text-[15px] font-[600]">
-                            <span class=" bg-[#8FFF00] p-2"> Completed</span>
-                        </td>
-                    </tr>
-                    <tr class="">
-                        <td class=" py-4  flex items-center gap-3 text-[14px] md:text-[15px] font-[600]">
-                            Beli Asset
-                        </td>
-                        <td class="text-[14px] md:text-[15px] font-[600]"> Maret 2023</td>
-                        <td class="text-[14px] md:text-[15px] font-[600]">
-                            <span class=" bg-[#ED1C24] p-2"> Overdue </span>
+                            <span class=" bg-[#00FFFF] p-2">{{ i.target_status.name }}</span>
                         </td>
                     </tr>
                 </tbody>
@@ -312,8 +158,33 @@
 </template>
 <script setup>
 import { useSidebarStore } from '../../stores/Store';
+import { useDetailBusines } from '../../stores/Bisnis/BisnisDetail';
+// import { useRouter } from "vue-router";
+// import { useBusinessStore } from '../../stores/BusinesStore';
+import { onMounted } from 'vue';
 
-const openSideBar = useSidebarStore()
+const openSideBar = useSidebarStore();
+
+//=====================fetch data ============================
+const bisnisStore = useDetailBusines();
+
+const bisnis = bisnisStore.Detaillbusiness;
+const namaBisnis = bisnisStore.NamaBisnis;
+const logoBisnis = bisnisStore.LogoBisnis;
+const id_bisnis = bisnisStore.id_bisnis;
+
+
+const pemilik = bisnisStore.Pemilik;
+
+const pendamping = bisnisStore.Pendamping;
+const karyawan = bisnisStore.Karyawan;
+const asset = bisnisStore.Asset;
+const target = bisnisStore.TargetBisnis
+
+onMounted(() => {
+    bisnisStore.fetchBisnis()
+})
+
 
 </script>
 <style ></style>

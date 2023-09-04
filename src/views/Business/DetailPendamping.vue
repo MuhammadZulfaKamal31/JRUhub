@@ -15,38 +15,19 @@
                             <th class="text-[16px] font-[600] text-start">Pendamping</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody v-for="i in detailPendamping">
                         <tr class="">
                             <td class=" py-4 pt-6  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
+                                {{ i.companion_user.username }}
                             </td>
-                            <td class="text-[15px] font-[600]">Teknis</td>
+                            <td class="text-[15px] font-[600]">{{ i.companion_as.name }}</td>
                         </tr>
-                        <tr class="">
-                            <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
-                            </td>
-                            <td class="text-[15px] font-[600]"> Strategis </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
-                            </td>
-                            <td class="text-[15px] font-[600]"> Fasilitator</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
-                            </td>
-                            <td class="text-[15px] font-[600]"> Fasilitator</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
+            <!-- {{ detailPendamping }} -->
             <!-- Tambah Pendamping -->
             <div class=" h-full w-full bg-white p-8 rounded-md">
                 <h1 class=" text-[29px] md:text-[32px] font-semibold"> Tambah Pendamping</h1>
@@ -75,15 +56,15 @@
         <!-- Detail Pendamping -->
         <div class=" flex md:w-[48%] h-[600px] gap-10">
             <div class=" h-full w-full bg-white p-8 rounded-md">
-                <div class=" flex flex-col items-center">
+                <div class=" flex flex-col items-center" v-for="i in detailPendamping">
                     <h1 class=" text-[29px] md:text-[32px] font-semibold py-6">Detail Pendamping</h1>
                     <div class=" py-5">
                         <div class=" h-[241px] w-[241px] bg-[#D9D9D9] rounded-full">
                         </div>
                     </div>
                     <div class=" flex flex-col items-center pt-6">
-                        <h1 class=" text-[29px] md:text-[32px]  font-semibold"> Nama Pendamping</h1>
-                        <p class=" text-[20px]">Pendamping Teknis</p>
+                        <h1 class=" text-[29px] md:text-[32px]  font-semibold"> {{ i.companion_user.username }}</h1>
+                        <p class=" text-[20px]">{{ i.companion_as.name }}</p>
                     </div>
                 </div>
             </div>
@@ -94,8 +75,20 @@
     </div>
 </template>
 <script setup>
+import { onMounted } from 'vue';
 import { useSidebarStore } from '../../stores/Store';
+import { useDetailPendamping } from '../../stores/Bisnis/DetailPendamping.mjs';
 
-const sideBar = useSidebarStore()
+const sideBar = useSidebarStore();
+
+//============================= fetch api====================================
+
+const detailPendampingStore = useDetailPendamping();
+const detailPendamping = detailPendampingStore.DetailPendamping;
+
+onMounted(() => {
+    detailPendampingStore.fetchBisnis()
+})
+
 </script>
 <style ></style>

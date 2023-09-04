@@ -9,45 +9,15 @@
                     <thead>
                         <tr class="">
                             <td class=" py-5 text-[17px] font-[600]">Name</td>
-                            <td class=" text-[17px] font-[600]">Share</td>
+                            <td class=" text-[17px] font-[600]">Jabatan</td>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody v-for=" i in dataKaryawan">
                         <tr class="">
-                            <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                            <td class=" font-[600] text-[15px]">30%</td>
+                            <td class=" py-3 text-red-600 text-[15px] font-[600]">{{ i.employee_user.username }}</td>
+                            <td class=" font-[600] text-[15px]">{{ i.employee_position.jabatan }}</td>
                             <td>
                                 <i class="fa-solid fa-pen-to-square"></i>
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-trash"></i>
-                            </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                            <td class=" font-[600] text-[15px]">30%</td>
-                            <td>
-                                <span class="fa-solid fa-pen-to-square"></span>
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-trash"></i>
-                            </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                            <td class=" font-[600] text-[15px]">30%</td>
-                            <td>
-                                <span class="fa-solid fa-pen-to-square"></span>
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-trash"></i>
-                            </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                            <td class=" font-[600] text-[15px]">30%</td>
-                            <td>
-                                <span class="fa-solid fa-pen-to-square"></span>
                             </td>
                             <td>
                                 <i class="fa-solid fa-trash"></i>
@@ -58,35 +28,40 @@
             </div>
             <!-- detil karyawan -->
             <div class=" w-full h-full bg-white p-10 rounded-md">
-                <h1 class=" text-[32px] font-[600]"> Detil Karyawan</h1>
-                <div class=" md:pl-7 mt-7">
-                    <div class=" w-[241px] h-[241px] rounded-full bg-[#D9D9D9]"></div>
-                    <div class=" flex md:justify-start">
-                        <div class=" py-10 flex flex-col items-center ">
-                            <h2 class=" text-[29px] font-[500] py-2">Harsana Budiyanto</h2>
-                            <p class="text-[13px] font-[500]"> budiyanto.harsana@gmail.com</p>
+                <div v-for="i in dataKaryawan">
+                    <h1 class=" text-[32px] font-[600]"> Detil Karyawan</h1>
+                    <div class=" md:pl-7 mt-7">
+                        <div class=" w-[241px] h-[241px] rounded-full bg-[#D9D9D9]">
+                            <img :src="`${baseImageUrl}` + gambar" alt="">
+                        </div>
+                        <div class=" flex md:justify-start">
+                            <div class=" py-10 flex flex-col items-center ">
+                                <h2 class=" text-[29px] font-[500] py-2">{{ i.employee_user.username }}</h2>
+                                <p class="text-[13px] font-[500]"> {{ i.employee_user.email }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class=" py-5">
-                    <label for="" class=" text-[14px] font-[500]"> Posisi</label>
-                    <p class=" text-[29px] font-[600]">UI/UX DESIGNER</p>
-                </div>
-                <div class=" py-5">
-                    <label for="" class=" text-[14px] font-[500]"> Gaji Pokok</label>
-                    <p class=" text-[29px] font-[600]">Rp1.000.000,00-</p>
-                </div>
-                <div class=" py-5">
-                    <label for="" class=" text-[14px] font-[500]"> Uang Makan</label>
-                    <p class=" text-[29px] font-[600]">Rp500.000,00-</p>
-                </div>
-                <div class=" py-5">
-                    <label for="" class=" text-[14px] font-[500]"> Tahun Masuk</label>
-                    <p class=" text-[29px] font-[600]">Februari 2022</p>
-                </div>
-                <div class=" py-5">
-                    <label for="" class=" text-[14px] font-[500]"> Jumlah Kesehatan</label>
-                    <p class=" text-[29px] font-[600]"> BPJS</p>
+                    <div class=" py-5">
+                        <label for="" class=" text-[14px] font-[500]"> Posisi</label>
+                        <p class=" text-[29px] font-[600]">{{ i.employee_position.jabatan }}</p>
+                    </div>
+                    <div class=" py-5">
+                        <label for="" class=" text-[14px] font-[500]"> Gaji Pokok</label>
+                        <p class=" text-[29px] font-[600]">{{ i.employee_salary }}</p>
+                    </div>
+                    <div class=" py-5">
+                        <label for="" class=" text-[14px] font-[500]"> Uang Makan</label>
+                        <p class=" text-[29px] font-[600]">Rp500.000,00</p>
+                    </div>
+                    <div class=" py-5">
+                        <label for="" class=" text-[14px] font-[500]"> Tahun Masuk</label>
+                        <p class=" text-[29px] font-[600]">{{ i.employee_join_date }}</p>
+                    </div>
+                    <div class=" py-5">
+                        <label for="" class=" text-[14px] font-[500]"> Jumlah Kesehatan</label>
+                        <p class=" text-[29px] font-[600]"> {{ i.employee_bpjs_ketenagakerjaan }}</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -127,8 +102,20 @@
 </template>
 <script setup>
 import { useSidebarStore } from '../../stores/Store';
+import { useEmployees } from '../../stores/Bisnis/Employees';
+import { onMounted } from 'vue';
 
+const baseImageUrl = import.meta.env.VITE_BASE_IMAGE_URL;
 const sideBar = useSidebarStore();
+
+//=========================================== fetch Api======================
+const EmployeesStore = useEmployees();
+const dataKaryawan = EmployeesStore.Employees;
+const gambar = EmployeesStore.Gambar;
+
+onMounted(() => {
+    EmployeesStore.fetchBisnis()
+})
 
 </script>
 <style setup></style>

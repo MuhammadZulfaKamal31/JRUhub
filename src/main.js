@@ -5,6 +5,7 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+// import "./axios.js"
 //biar bisa nampilin warna da judul chart
 import "./plugins/Chart.js"
 

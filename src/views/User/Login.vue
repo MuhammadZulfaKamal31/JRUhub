@@ -1,8 +1,9 @@
 <template>
-    <div class="h-screen w-screen flex justify-between items-center">
+    <div class="h-full w-screen flex justify-between items-center">
         <div class=" mt-[100px]">
             <div class=" border border-red-600 md:border-none m-7 md:m-0 p-5 md:p-0">
-                <form @submit.prevent="login" class=" font-inter w-full md:w-[329px] md:mx-16 ">
+                <!-- form -->
+                <form @submit.prevent="login" method="POST" class=" font-inter w-full md:w-[329px] md:mx-16 ">
                     <h1 class=" text-center md:text-start text-2xl md:text-3xl my-5"> Wellcome to <span
                             class=" text-red-600">JRUHUB</span></h1>
                     <p class=" text-center text-[12px] md:text-[14px] font-thin"> Lorem ipsum dolor sit amet consectetur
@@ -14,8 +15,8 @@
                     </p>
                     <div class=" mb-7 mt-19">
                         <div class=" my-8">
-                            <input v-model="email" class="border w-full md:w-[329px] h-[60px] bg-[#FAFAFA]" type="email"
-                                placeholder=" Email">
+                            <input v-model="userName" class="border w-full md:w-[329px] h-[60px] bg-[#FAFAFA]" type="text"
+                                placeholder=" Username">
                         </div>
                         <div>
                             <input v-model="password" class=" border w-full md:w-[329px] h-[60px] bg-[#FAFAFA]"
@@ -37,8 +38,8 @@
                         </button>
                     </div>
                 </form>
-            </div>
 
+            </div>
             <div class=" w-full text-center md:pt-24 py-7 shadow-sm text-[14px]">
                 <span> © 2023 <span class=" text-red-500 text-[13px]">jruhub.com.</span> All rights reserved.</span>
             </div>
@@ -51,21 +52,33 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import axios from 'axios';
 
-const router = useRouter()
-const email = ref("");
+const router = useRouter();
+const userName = ref("");
 const password = ref("");
-const error = ref("")
+const error = ref("");
 
+const login = async () => {
+    // console.log("login", import.meta.env.VITE_BASE_API_URL)
+    if (!userName.value || !password.value) {
+        error.value = "Username dan Password harus di isi";
+    } try {
+        const response = await axios.post(`${import.meta.env.VITE_BASE_API_URL}/user/signin`, {
+            username: userName.value,
+            password: password.value
+        });
 
-const login = () => {
-    if (!email.value || !password.value) {
-        error.value = "Email dan Password harus di isi"
-    } else {
+        const token = response.data.access;
+        localStorage.setItem('token', token);
+
         const username = 'Dashboard';
-        router.push({ name: 'HalUtama', params: { username: username } })
+        router.push({ name: 'HalUtama', params: { judul: username } });
+    } catch (err) {
+        error.value = "Login gagal. Periksa username dan password Anda.";
+        console.error(err);
     }
 }
-
 </script>
+
 <style></style>

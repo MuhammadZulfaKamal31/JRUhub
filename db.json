@@ -1,0 +1,794 @@
+{
+	"info": {
+		"_postman_id": "e78cfe86-00f7-4330-89d5-7980aeeaac9f",
+		"name": "Jruhub API",
+		"description": "API endpoint = /api/v1/\n\nImage Endpoint = /media",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8538536"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "sign in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "mualifulil",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Mualif123!@#",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/user/signin",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"signin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sign in",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "mualifulil",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "Mualif123!@#",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/user/signin",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user",
+										"signin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 03:40:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.4"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "483"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5MjkzNDgxMSwiaWF0IjoxNjkyODQ4NDExLCJqdGkiOiJiYWRiZDM4YmFjZDA0MDdjODUxYmZmYzQyZDJlYjc5ZiIsInVzZXJfaWQiOjF9.RTdK5f7VN51TAqWWw1AN9CyiTttB_DEDMfNdFBA1dK0\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyODUyMDExLCJpYXQiOjE2OTI4NDg0MTEsImp0aSI6IjQzMDdkMWJlZjNlODRhOTQ4OWY2YTJmYjllZTU0MmU4IiwidXNlcl9pZCI6MX0.jjcr7yQckXvUnq_UXRAWzwRdXyJwWSqOY43mxYsHGyo\"\n}"
+						}
+					]
+				},
+				{
+					"name": "sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "username",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "password_confirm",
+									"value": "password_confirm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/user/signup",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sign up",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "username",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "email@mail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "password",
+											"type": "text"
+										},
+										{
+											"key": "password_confirm",
+											"value": "password_confirm",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/user/signup",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 03:44:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.4"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"username\": \"username\",\n    \"email\": \"email@mail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "username",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "password_confirm",
+									"value": "password_confirm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/user/my-profile/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"my-profile",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update profile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_address",
+											"value": "Dk.Bambankerep RT 01/04,Kedungpani,Mijen",
+											"type": "text"
+										},
+										{
+											"key": "user_phone",
+											"value": "6285865030447",
+											"description": "remove 0 with 62",
+											"type": "text"
+										},
+										{
+											"key": "user_profile_picture",
+											"type": "file",
+											"src": "/Users/home/Downloads/pexels-julia-m-cameron-4145347.jpg"
+										},
+										{
+											"key": "user_full_name",
+											"value": "Mualif Ulil Misbakh",
+											"type": "text"
+										},
+										{
+											"key": "user_gender",
+											"value": "L",
+											"description": "L | P",
+											"type": "text"
+										},
+										{
+											"key": "user_birth_date",
+											"value": "2000-10-15",
+											"description": "YYYY-MM-DD",
+											"type": "text"
+										},
+										{
+											"key": "user_birth_place",
+											"value": "Semarang",
+											"type": "text"
+										},
+										{
+											"key": "user_npwp",
+											"value": "",
+											"description": "Leave empty if don't have",
+											"type": "text"
+										},
+										{
+											"key": "user_ktp",
+											"value": "337415101010001",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/user/my-profile/update",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user",
+										"my-profile",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 03:53:33 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.4"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "427"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"user\": {\n        \"id\": 1,\n        \"username\": \"mualifulil\",\n        \"email\": \"mualifulil351@gmail.com\"\n    },\n    \"user_address\": \"Dk.Bambankerep RT 01/04,Kedungpani,Mijen\",\n    \"user_phone\": \"6285865030447\",\n    \"user_profile_picture\": \"/media/user_profile_picture/pexels-julia-m-cameron-4145347_zgvIQ1Y.jpg\",\n    \"user_full_name\": \"Mualif Ulil Misbakh\",\n    \"user_gender\": \"L\",\n    \"user_birth_date\": \"2000-10-15\",\n    \"user_birth_place\": \"Semarang\",\n    \"user_npwp\": \"\",\n    \"user_ktp\": \"337415101010001\"\n}"
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/my-profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"my-profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "profile",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/user/my-profile",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user",
+										"my-profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 03:53:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.4"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "427"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"user\": {\n        \"id\": 1,\n        \"username\": \"mualifulil\",\n        \"email\": \"mualifulil351@gmail.com\"\n    },\n    \"user_address\": \"Dk.Bambankerep RT 01/04,Kedungpani,Mijen\",\n    \"user_phone\": \"6285865030447\",\n    \"user_profile_picture\": \"/media/user_profile_picture/pexels-julia-m-cameron-4145347_zgvIQ1Y.jpg\",\n    \"user_full_name\": \"Mualif Ulil Misbakh\",\n    \"user_gender\": \"L\",\n    \"user_birth_date\": \"2000-10-15\",\n    \"user_birth_place\": \"Semarang\",\n    \"user_npwp\": \"\",\n    \"user_ktp\": \"337415101010001\"\n}"
+						}
+					]
+				},
+				{
+					"name": "refresh token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "refresh",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5MjkzNDgxMSwiaWF0IjoxNjkyODQ4NDExLCJqdGkiOiJiYWRiZDM4YmFjZDA0MDdjODUxYmZmYzQyZDJlYjc5ZiIsInVzZXJfaWQiOjF9.RTdK5f7VN51TAqWWw1AN9CyiTttB_DEDMfNdFBA1dK0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/user/refresh",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "business",
+			"item": [
+				{
+					"name": "my-business",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/business",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"business"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/business/detail/:id_business",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"business",
+								"detail",
+								":id_business"
+							],
+							"variable": [
+								{
+									"key": "id_business",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "owners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/business/detail/:id_business/owners",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"business",
+								"detail",
+								":id_business",
+								"owners"
+							],
+							"variable": [
+								{
+									"key": "id_business",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "owners detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/business/detail/:id_business/owners/:owner_id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"business",
+								"detail",
+								":id_business",
+								"owners",
+								":owner_id"
+							],
+							"variable": [
+								{
+									"key": "id_business",
+									"value": "2"
+								},
+								{
+									"key": "owner_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "companion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/business/detail/:id_business/companion",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"business",
+								"detail",
+								":id_business",
+								"companion"
+							],
+							"variable": [
+								{
+									"key": "id_business",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/business/detail/:id_business/assets",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"business",
+								"detail",
+								":id_business",
+								"assets"
+							],
+							"variable": [
+								{
+									"key": "id_business",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Master Data",
+			"item": [
+				{
+					"name": "master asset status",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Circle",
+			"item": [
+				{
+					"name": "circle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/circle",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"circle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Circle Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/circle/detail/:id_circle",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"circle",
+								"detail",
+								":id_circle"
+							],
+							"variable": [
+								{
+									"key": "id_circle",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk4MDQ0MzM4LCJpYXQiOjE2OTI4NDg0MTEsImp0aSI6IjJmMjQ0ODU2OTE1ODQ2Y2U5NWMxMjgzZDY5OWZlZWZjIiwidXNlcl9pZCI6MX0.VgqE4tN8lrZIPUGq8UjURZXigpdF7z5MvUsh5_cRqB0",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000/api/v1"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

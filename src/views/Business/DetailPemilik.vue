@@ -55,40 +55,10 @@
                                 <td class=" text-[17px] font-[600]">Share</td>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody v-for=" i in pemilik">
                             <tr class="">
-                                <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataValues[0] }}%</td>
-                                <td>
-                                    <span class="fa-solid fa-pen-to-square"></span>
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-trash"></i>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataValues[1] }}%</td>
-                                <td>
-                                    <span class="fa-solid fa-pen-to-square"></span>
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-trash"></i>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataValues[2] }}%</td>
-                                <td>
-                                    <span class="fa-solid fa-pen-to-square"></span>
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-trash"></i>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class=" py-3 text-red-600 text-[15px] font-[600]">Owner #1</td>
-                                <td class=" font-[600] text-[15px]">{{ dataValues[3] }}%</td>
+                                <td class=" py-3 text-red-600 text-[15px] font-[600]">{{ i.owner_user.username }}</td>
+                                <td class=" font-[600] text-[15px]">{{ i.owner_shares }}%</td>
                                 <td>
                                     <span class="fa-solid fa-pen-to-square"></span>
                                 </td>
@@ -102,15 +72,15 @@
             </div>
             <!-- nama pemilik -->
             <div class=" w-full h-full bg-white p-10 rounded-md">
-                <h1 class=" text-[27px] md:text-[30px] font-[600]">Nama Pemilik</h1>
+                <h1 class=" text-[27px] md:text-[30px] font-[600]">Nama Bisnis</h1>
                 <div class=" md:pl-10 mt-14 flex flex-col items-center md:items-start ">
                     <div class=" w-[200px] h-[200px] md:w-[241px] md:h-[241px] rounded-full bg-[#D9D9D9]">
-                        <img src="" alt="">
+                        <img :src="`${baseImageUrl}` + gambarBisnis" alt="">
                     </div>
                     <div class=" flex justify-start">
                         <div class=" py-10 flex flex-col items-center">
-                            <h2 class=" text-[25px] md:text-[29px] font-[500] py-2">Harsana Budiyanto</h2>
-                            <p class="text-[13px] font-[500]"> budiyanto.harsana@gmail.com</p>
+                            <h2 class=" text-[25px] md:text-[29px] font-[500] py-2">{{ namaBisnis }}</h2>
+                            <p class="text-[13px] font-[500]">{{ emailBisnis }}</p>
                         </div>
                     </div>
                 </div>
@@ -125,25 +95,28 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue"
+import { ref, computed, onMounted } from "vue"
+import { useOwnerBusines } from "../../stores/Bisnis/Owner";
 import { DoughnutChart } from "vue-chart-3"
 import { Chart, DoughnutController, ArcElement } from "chart.js"
 
 //=======================penyesuaian tampilan=======================================
 import { useSidebarStore } from '../../stores/Store';
 const sideBar = useSidebarStore()
+const baseImageUrl = import.meta.env.VITE_BASE_IMAGE_URL;
+
 //========================chart js =================================================
 // Mendaftarkan modul Chart.js yang dibutuhkan
 Chart.register(DoughnutController, ArcElement)
 // Data nilai-nilai
-const dataValues = ref([22, 25, 10, 15])
+const dataValues = ref([])
 // Menyiapkan data untuk grafik Donut
 const data = computed(() => ({
     labels: dataValues.value.map(value => `${value}%`),
     datasets: [
         {
             data: dataValues.value,
-            backgroundColor: ["#ff7f50", "#ffffff", "#ff6347", "#ff5330", "#f5afa3"]
+            backgroundColor: ["#ff7f50", "#ff6347", "#ffffff", "#f5afa3"]
         }
     ],
 }));
@@ -182,6 +155,23 @@ const selectUser = (user) => {
 const onInputChange = () => {
     showUserList.value = !!searchQuery.value; //search query di sini mengahasilkan tanda false 
 };
+
+//========================fetch api ==================================
+const ownerBisnis = useOwnerBusines();
+
+const pemilik = ownerBisnis.OwnerBisnis;
+const sisaPersentase = ownerBisnis.SisaPersentase;
+const namaBisnis = ownerBisnis.NamaBisnis;
+const emailBisnis = ownerBisnis.EmailBisnis;
+const gambarBisnis = ownerBisnis.GambarBisnis;
+
+console.log("dataVlues" + sisaPersentase)
+onMounted(() => {
+    ownerBisnis.fetchBisnis();
+    dataValues.value = pemilik.map((item) => parseFloat(item.owner_shares));
+    // Menambahkan sisaPersentase ke dataValues
+    dataValues.value.push(parseFloat(sisaPersentase));
+})
 </script>
 
 <style></style>

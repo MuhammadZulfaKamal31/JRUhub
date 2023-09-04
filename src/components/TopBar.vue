@@ -26,7 +26,7 @@
         <div v-show="showDropDown" class=" absolute right-[40px] top-[6.5rem] z-10 mt-2 w-[119px] origin-top-right rounded-md bg-white shadow-lg ring-1
                 ring-black ring-opacity-5 focus:outline-none">
             <div class="py-1 text-left">
-                <router-link to="/Dashboard/Profile/Profile" class=" block px-4 py-2 text-sm" role="menuitem"
+                <router-link to="/Layeout/Profile/Profile" class=" block px-4 py-2 text-sm" role="menuitem"
                     id=" menu-item-2">
                     <span class="fa-solid fa-gauge"></span> Pofile</router-link>
                 <form method="POST" action="" role="none">

@@ -4,6 +4,7 @@ import Login from '../views/User/Login.vue';
 import Register from '../views/User/Register.vue'
 import HalUtama from '../views/Business/HalUtama.vue'
 import Profile from '../views/User/Profile.vue'
+import UpdateProfile from '../views/User/UpdateProfile.vue';
 import Pendapatan from '../views/User/Pendapatan.vue'
 import Bisnis from '../views/Business/Bisnis.vue'
 import BisnisSaya from '../views/Business/My-Business.vue';
@@ -44,8 +45,13 @@ const router = createRouter({
         },
         {
           path: 'Profile',
-          name: 'Profil', 
+          name: 'Profile', 
           component: Profile
+        },
+        {
+          path: 'updateProfile',
+          name: 'UpdateProfile', 
+          component: UpdateProfile
         },
         {
           path: 'Pendapatan',
@@ -58,7 +64,7 @@ const router = createRouter({
           component: Bisnis
         },
         {
-          path: 'Bisnis_Saya/:id_detail',
+          path: 'Bisnis_Saya/:id_bisnis',
           name: 'BisnisSaya',
           component: BisnisSaya
         },
@@ -73,27 +79,27 @@ const router = createRouter({
           component: Circle
         },
         {
-          path: 'Detail_Circle/:id',
+          path: 'Detail_Circle/:id_circle',
           name: 'DetailCircle',
           component: DetailCircle
         },
         {
-          path: 'Detail_Pemilik/:id_pemilik',
+          path: 'Detail_Pemilik/:id_bisnis',
           name: 'Detail_Pemilik',
           component: DetailPemilik
         },
         {
-          path: 'Detail_Karyawan/:id_karyawan',
+          path: 'Detail_Karyawan/:id_bisnis',
           name: 'DetailKaryawan',
           component: DetailKaryawan
         },
         {
-          path: 'Detail_Pendamping/:id_pendamping',
+          path: 'Detail_Pendamping/:id_bisnis',
           name: 'DetailPendamping',
           component: DetailPendamping
         },
         {
-          path: 'Detail_Asset:id_asset',
+          path: 'Detail_Asset/:id_bisnis',
           name: 'DetailAsset',
           component: DetailAsset
         }
@@ -101,6 +107,10 @@ const router = createRouter({
     }
 
   ]
-})
+});
+
+// router.beforeEach((to, from, next)=>{
+
+// })
 
 export default router

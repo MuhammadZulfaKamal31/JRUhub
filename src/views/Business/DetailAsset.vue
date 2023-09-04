@@ -12,41 +12,19 @@
                     <thead>
                         <tr class="">
                             <th class="text-[16px] font-[600] text-start ">Name</th>
-                            <th class="text-[16px] font-[600] text-end">Share</th>
+                            <th class="text-[16px] font-[600] text-end">Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="">
+                        <tr v-for="i in asset" class="">
                             <td class=" py-4 pt-8  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
                                 <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
+                                {{ i.asset_name }}
                             </td>
-                            <td class="text-[15px] font-[600] text-end">30%</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4 flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
-                            </td>
-                            <td class="text-[15px] font-[600] text-end"> 25% </td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
-                            </td>
-                            <td class="text-[15px] font-[600] text-end"> 20%</td>
-                        </tr>
-                        <tr class="">
-                            <td class=" py-4  flex items-center gap-3 text-red-600 text-[15px] font-[600]">
-                                <img class=" w-[40px] h-[40px] rounded-full" src="../../assets/Rectangle10.png" alt="">
-                                Owner
-                            </td>
-                            <td class="text-[15px] font-[600] text-end"> 15%</td>
+                            <td class="text-[15px] font-[600] text-end">{{ i.asset_condition }}</td>
                         </tr>
                     </tbody>
                 </table>
-
             </div>
             <div class=" w-full h-full bg-white rounded-md p-10">
                 <h1 class=" text-[32px] font-semibold mb-11"> Tambah Asset</h1>
@@ -91,36 +69,36 @@
         <div class=" md:h-[744px] w-full bg-white rounded-md p-10">
             <h1 class=" text-[32px] font-semibold"> Detail Asset</h1>
             <div class=" h-full w-full flex gap-10">
-                <div class=" w-full h-full">
+                <div v-for="i in asset" class=" w-full h-full">
                     <div class=" my-10 mb-[80px] md:mb-0">
                         <label for="" class=" text-[14px] font-semibold py-5"> Nama Asset</label>
-                        <p class=" text-[29px] md:text-[32px] font-semibold"> Macbook Pro 2015 Early</p>
+                        <p class=" text-[29px] md:text-[32px] font-semibold"> {{ i.asset_description }}</p>
                     </div>
                     <div class=" my-10">
                         <label for="" class=" text-[14px] font-semibold py-5"> Kondisi</label>
-                        <p class=" text-[29px] md:text-[32px] font-semibold"> Normal</p>
+                        <p class=" text-[29px] md:text-[32px] font-semibold"> {{ i.asset_condition }}</p>
                     </div>
                     <div class=" my-10">
                         <label for="" class=" text-[14px] font-semibold py-5"> Jumlah Asset</label>
-                        <p class=" text-[29px] md:text-[32px] font-semibold"> 1 </p>
+                        <p class=" text-[29px] md:text-[32px] font-semibold"> {{ i.asset_quantity }} </p>
                     </div>
                     <div class=" my-10">
                         <label for="" class=" text-[14px] font-semibold py-5"> Tanggal Pembelian</label>
-                        <p class=" text-[27px] md:text-[32px] font-semibold"> 12-Agustus 2022</p>
+                        <p class=" text-[27px] md:text-[32px] font-semibold"> {{ i.asset_buy_date }}</p>
                     </div>
                 </div>
-                <div class=" h-full w-full">
+                <div v-for="i in asset" class=" h-full w-full">
                     <div>
                         <p class=" text-[14px] font-semibold my-9"> Foto Nota Pembelian</p>
-                        <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
+                        <img :src="`${baseImageUrl}` + i.asset_receipt" alt="" class=" w-[170px] h-[125px]">
                     </div>
                     <div>
                         <p class=" text-[14px] font-semibold my-9"> Foto Asset</p>
                         <div class=" flex flex-wrap overflow-auto gap-10">
-                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
-                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
-                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
-                            <img src="../../assets/Rectangle57.png" alt="" class=" w-[170px] h-[125px]">
+                            <img :src="`${baseImageUrl}` + i.asset_photo" alt="" class=" w-[170px] h-[125px]">
+                            <img :src="`${baseImageUrl}` + i.asset_photo" alt="" class=" w-[170px] h-[125px]">
+                            <img :src="`${baseImageUrl}` + i.asset_photo" alt="" class=" w-[170px] h-[125px]">
+                            <img :src="`${baseImageUrl}` + i.asset_photo" alt="" class=" w-[170px] h-[125px]">
                         </div>
                     </div>
                 </div>
@@ -132,9 +110,26 @@
     </div>
 </template>
 <script setup>
+import { onMounted } from 'vue';
 import { useSidebarStore } from '../../stores/Store';
+import { useAssetBusines } from '../../stores/Bisnis/AssetBisnis'
 
+const baseImageUrl = import.meta.env.VITE_BASE_IMAGE_URL;
 const sideBar = useSidebarStore();
+
+//=============================== fetch api =========================
+const assetStore = useAssetBusines();
+
+const asset = assetStore.AssetBusiness;
+
+const assetDescription = assetStore.AssetDescription;
+
+console.log("12356" + assetDescription)
+
+
+onMounted(() => {
+    assetStore.fetchBisnis();
+})
 
 </script>
 <style></style>
